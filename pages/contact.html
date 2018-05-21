@@ -158,10 +158,10 @@
 		<div class="container-fluid myTitle py-3">
 			<div class="container">
 					<div class="row flex-column">
-						<h3 class=""><b>CONTACT US</b></h3>
+						<h3 class=""><b></b>CONTACT US</h3>
 						<nav aria-label="breadcrumb myBreadcrum">
 								<ol class="breadcrumb myBreadcrum">
-									<li class="breadcrumb-item"><a href="#">Home</a></li>
+									<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
 									<li class="breadcrumb-item active" aria-current="page">Contact</li>
 								</ol>
 						</nav>
@@ -216,7 +216,7 @@
                 <label for="formLoginPassword">Password:</label>
                 <input type="password" class="form-control myInput-elegant-2" id="formLoginPassword" placeholder="Password">
               </div>
-              <div class="d-flex flex-column align-items-center">
+              <div class="d-flex flex-column align-items-center mt-4">
               <button type="submit" class="btn myBtn-fill">Log in</button>
               <a href="signup.html" class="text-muted mt-3 mb-2" target="_blank"><small>Doesn't have an account?</small></a>
               <a href="signup.html" class="btn myBtn-outline" target="_blank">Sign up</a>
@@ -225,6 +225,37 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- Modal: SUBSCRIBE -->
+    <div class="modal fade" id="formSubscribe" tabindex="-1" role="dialog" aria-labelledby="formSubscribeLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formSubscribeLabel">Subscribe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formSubscribeEmail" class="mb-4">Subscribe to our <b>Newsletters</b></label>
+                                <div class="input-group mb-3">
+                                        <input type="email" class="form-control myInput-elegant-2" id="formSubscribeEmail" aria-describedby="emailHelp" placeholder="Your email address">
+                                        
+                                        
+                                        <div class="input-group-append">
+                                                <button type="submit" class="btn myBtn-fill">Subscribe</button>
+                                        </div>
+                                      </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <footer class="container-fluid py-3 bg-light">
@@ -236,7 +267,9 @@
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
-            <a href="#" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="#" data-toggle="modal" data-target="#formSubscribe" target="_blank" >
+                <i class="far fa-envelope"></i>
+            </a>
         </div>
         <div class="row justify-content-center myFooter-policy mb-2">
           <a href="#" target="_blank" class="text-dark">Terms of service</a> <span> | </span>

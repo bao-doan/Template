@@ -3,7 +3,7 @@
     box-shadow: none !important;
     border-color: none;
 }
-input,a,button,textarea:focus {
+input,a,button,textarea,select:focus {
     outline: none !important;
     box-shadow: none !important;
     border-color: none;

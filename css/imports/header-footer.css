@@ -52,7 +52,7 @@
 .myInput-elegant:hover {
     font-style: italic;
 }
-.myInput-elegant-2 {
+.myInput-elegant-2, .myInput-elegant-3 {
     border-width: 0px;
     border-radius: 0px;
     background: var(--myBlackOpa3);
@@ -60,6 +60,10 @@
 }
 .myInput-elegant-2:focus {
     border: 1px solid var(--myBlackOpa2);
+    background: white;
+}
+.myInput-elegant-3:focus {
+    border-bottom: 1px solid var(--myBlackOpa2);
     background: white;
 }
 .myBtn-icon {
@@ -74,6 +78,13 @@
 }
 .myText-indent {
     text-indent: 20px;
+}
+.myText-link {
+    color: var(--myBlueGray2);
+    text-decoration: underline;
+}
+.myText-link:hover {
+    color: var(--myOrange);
 }
 .myDropdown .dropdown-menu {
     border: none;
@@ -93,6 +104,7 @@
 /* Dropdown Cart */
 .myDropdown-cart {
     z-index: 10000;
+    width: 330px;
 }
 .myCart-img img {
     width: 70px;
@@ -102,20 +114,16 @@
     color: var(--myBlackText);
 }
 .myCart-name, .myCart-price {
-    width: 150px;
+    /* width: 150px; */
 }
 .myCart-product {
     border-bottom: 1px solid var(--myBlackOpa2);
 }
-/* .myCart-product:hover {
-    border: 1px solid var(--myBlackOpa1);
-    box-sizing: border-box;
-} */
 .myCart-scroll .myCart-product {
     flex: 0 0 auto;
 }
 .myCart-scroll {
-    height: 250px;
+    height: 260px;
     overflow-Y: scroll;
     border: 1px solid var(--myBlackOpa2);
 }
@@ -136,4 +144,12 @@
 }
 .myBreadcrum li:not(.active) a {
     color: var(--myBlueGray2);
+}
+.mySignup {
+    border-radius: 0px;
+    border: 1px solid var(--myBlackOpa2);
+}
+.myBackground {
+    background-image: url('../../img/background/background-1.jpg');
+    object-fit: contain;
 }
