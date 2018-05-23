@@ -55,3 +55,6 @@ input,a,button,textarea,select:focus {
 .myBtn-jumptop:active {
     background-color: var(--myOrange);
 }
+#dropdownCart::after {
+    display:none
+}

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account | Brand</title>
+    <!-- CSS Bootstrap & Custom & Fonts -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/font-awesome-5/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../vendor/hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" href="../css/ultil.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-light">
+        <a href="../index.html" class="myBrand-logo" target="_blank">Brand</a>
+        <div class="d-flex flex-row pr-3">
+            <a href="#" class="btn myBtn-icon myOutline text-dark" data-toggle="collapse" data-target="#collapseAccount" aria-controls="collapseAccount"
+                aria-expanded="false">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-angle-down"></i>
+            </a>
+
+            <div class="dropdown">
+                <a href="#" class="btn dropdown-toggle myBtn-icon myOutline text-dark" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-shopping-cart"></i>
+                    <b class="badge badge-danger">5</b>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right myDropdown-cart rounded-0 p-3" aria-labelledby="dropdownCart">
+                    <h5 class="mb-3">Your Cart:</h5>
+                    <div class="myCart d-flex flex-column">
+                        <div class="d-flex flex-column myCart-scroll mb-3">
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column myCart-bottom">
+                            <span class="align-self-end mb-2">Total: $10,000</span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="cart.html" class="btn myBtn-fill mr-2" target="_blank">View Cart</a>
+                                <a href="checkout.html" class="btn myBtn-fill" target="_blank">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="collapseAccount">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="account.html">Account</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="" data-toggle="modal" data-target="#formLogin">Log in</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="signup.html">Sign up</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <!-- Button Collapse -->
+        <button class="navbar-toggler myBtn-icon myOutline fs-20 pl-0" type="button" data-toggle="collapse" data-target="#collapseMenu"
+            aria-controls="collapseMenu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button class="navbar-toggler myBtn-icon myOutline fs-20" type="button" data-toggle="collapse" data-target="#collapseSearch"
+            aria-controls="collapseSearch" aria-expanded="false">
+            <i class="fas fa-search"></i>
+            </span>
+        </button>
+        <!-- Collapse Menu -->
+        <div class="collapse navbar-collapse" id="collapseMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu myHover-dropdown rounded-0" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="product-list.html">Best Sellers</a>
+                        <a class="dropdown-item" href="product-list.html">On Sale</a>
+                        <a class="dropdown-item" href="product-list.html">New Arrivals</a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item" href="product-list.html">Coming Soon</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProduct" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="navbarProduct">
+                        <a class="dropdown-item" href="product-list.html">Laptop</a>
+                        <a class="dropdown-item" href="product-list.html">Macbook</a>
+                        <a class="dropdown-item" href="product-list.html">iPhone</a>
+                        <a class="dropdown-item" href="product-list.html">iPad</a>
+                        <a class="dropdown-item" href="product-list.html">Smartphone</a>
+                        <a class="dropdown-item" href="product-list.html">Camera</a>
+                        <!-- *** Test site *** -->
+                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarAccessories" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Accessories</a>
+                        <div class="dropdown-menu ml-4 rounded-0" aria-labelledby="navbarAccessories">
+                            <a class="dropdown-item" href="product-list.html">Headphone</a>
+                            <a class="dropdown-item" href="product-list.html">Wireless mouse</a>
+                            <a class="dropdown-item" href="product-list.html">Camera len</a>
+                            <a class="dropdown-item" href="product-list.html">Camera flash</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_blank">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Collapse Search -->
+        <div class="collapse navbar-collapse" id="collapseSearch">
+            <div class="input-group">
+                <input type="text" class="form-control myInput-elegant myOutline" placeholder="Find products..." aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary myBtn-icon w-auto" type="button">Go</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container-fluid myTitle py-3">
+        <div class="container">
+            <div class="row flex-column">
+                <h3 class="">MY ACCOUNT</h3>
+                <nav aria-label="breadcrumb myBreadcrum">
+                    <ol class="breadcrumb myBreadcrum">
+                        <li class="breadcrumb-item">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Account</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <!-- LEFT SIDEBAR -->
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="tabMainAccountLabel" data-toggle="pill" href="#tabMainAccount" role="tab" aria-controls="tabMainAccount" aria-selected="true"><i class="fas fa-user"></i> My Account</a>
+                    <a class="nav-link" id="tabMainCartLabel" data-toggle="pill" href="#tabMainCart" role="tab" aria-controls="tabMainCart" aria-selected="false"><i class="fas fa-shopping-cart"></i> My Cart</a>
+                    <a class="nav-link" id="tabMainOrderLabel" data-toggle="pill" href="#tabMainOrder" role="tab" aria-controls="tabMainOrder" aria-selected="false"><i class="fas fa-list-ul"></i> My Order List</a>
+                    <a class="nav-link" id="tabMainLogoutLabel" data-toggle="pill" href="#tabMainLogout" role="tab" aria-controls="tabMainLogout" aria-selected="false"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <!-- MAIN TABS -->
+                <div class="tab-content" id="tabMainNav">
+                    <!-- Do First -->
+                    <div class="tab-pane fade show active" id="tabMainAccount" role="tabpanel" aria-labelledby="tabMainAccountLabel">
+                        <!-- Tab HERE -->
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="tabAccountInfoLabel" data-toggle="tab" href="#tabAccountInfo" role="tab" aria-controls="tabAccountInfo" aria-selected="true"><i class="fas fa-info"></i> Info</a>
+                                <a class="nav-item nav-link" id="tabAccountAddressLabel" data-toggle="tab" href="#tabAccountAddress" role="tab" aria-controls="tabAccountAddress" aria-selected="false"><i class="far fa-address-book"></i> Address</a>
+                                <a class="nav-item nav-link" id="tabAccountPaymentLabel" data-toggle="tab" href="#tabAccountPayment" role="tab" aria-controls="tabAccountPayment" aria-selected="false"><i class="fas fa-dollar-sign"></i> Payment</a>
+                            </div>
+                        </nav>
+                            <div class="tab-content" id="tabAccount">
+                                <div class="tab-pane fade show active" id="tabAccountInfo" role="tabpanel" aria-labelledby="tabAccountInfoLabel">
+                                    <form class="mt-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 col-lg-6">
+                                                <div class="row">
+                                                        <div class="col-4">
+                                                                <div class="form-group w-100">
+                                                                        <label for="formSignupGender" class="sr-only">Gender</label>
+                                                                        <select class="form-control myInput-elegant-2" id="formSignupGender">
+                                                                            <option>Mr.</option>
+                                                                            <option>Ms.</option>
+                                                                        </select>
+                                                                </div>
+                                                        </div>
+                                                        
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-6 pr-1">
+                                                                <div class="form-group">
+                                                                        <label for="formSignupFirstname" class="sr-only">First Name:</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formSignupFirstname" aria-describedby="" placeholder="First Name">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                                <div class="form-group">
+                                                                        <label for="formSignupLastname" class="sr-only">Last Name:</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formSignupLastname" aria-describedby="" placeholder="Last Name">
+                                                                    </div>
+                                                        </div>
+                                                        
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-4 pr-0">
+                                                                <div class="form-group w-100">
+                                                                        <label for="formAccountBirthday" class="sr-only">Day</label>
+                                                                        <select class="form-control myInput-elegant-2" id="formAccountBirthday">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                            <option>6</option>
+                                                                            <option>7</option>
+                                                                            <option>8</option>
+                                                                            <option>9</option>
+                                                                            <option>10</option>
+                                                                            <option>11</option>
+                                                                            <option>12</option>
+                                                                            <option>13</option>
+                                                                            <option>14</option>
+                                                                            <option>15</option>
+                                                                            <option>16</option>
+                                                                            <option>17</option>
+                                                                            <option>18</option>
+                                                                            <option>19</option>
+                                                                            <option>20</option>
+                                                                            <option>21</option>
+                                                                            <option>22</option>
+                                                                            <option>23</option>
+                                                                            <option>24</option>
+                                                                            <option>25</option>
+                                                                            <option>26</option>
+                                                                            <option>27</option>
+                                                                            <option>28</option>
+                                                                            <option>29</option>
+                                                                            <option>30</option>
+                                                                            <option>31</option>
+                                                                        </select>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4 pr-0">
+                                                                <div class="form-group w-100">
+                                                                        <label for="formAccountBirthmonth" class="sr-only">Month</label>
+                                                                        <select class="form-control myInput-elegant-2" id="formAccountBirthmonth">
+                                                                            <option>January</option>
+                                                                            <option>February</option>
+                                                                            <option>March</option>
+                                                                            <option>April</option>
+                                                                            <option>May</option>
+                                                                            <option>June</option>
+                                                                            <option>July</option>
+                                                                            <option>August</option>
+                                                                            <option>September</option>
+                                                                            <option>October</option>
+                                                                            <option>November</option>
+                                                                            <option>December</option>
+                                                                        </select>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <div class="form-group"> 
+                                                                        <label for="formAccountBirthyear" class="sr-only">BirthYear</label>
+                                                                        <input type="number" value="1995" class="form-control myInput-elegant-2" id="formAccountBirthyear" placeholder="Year">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                            <div class="form-group"> 
+                                                                    <label for="formAccountPhone" class="sr-only">Phone Number</label>
+                                                                    <input type="number" value="" class="form-control myInput-elegant-2" id="formAccountPhone" placeholder="Phone Number">
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-12">
+                                                                <div class="form-group">
+                                                                        <label for="formSignupEmail" class="sr-only">Email:</label>
+                                                                        <input type="email" class="form-control myInput-elegant-3" id="formSignupEmail" placeholder="Email">
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                                <div class="form-group">
+                                                                        <label for="formSignupPassword" class="sr-only">Password:</label>
+                                                                        <input type="password" class="form-control myInput-elegant-3" id="formSignupPassword" placeholder="Password">
+                                                                    </div>
+                                                        </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <button type="submit" class="btn myBtn-fill mb-3">Update</button>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="tabAccountAddress" role="tabpanel" aria-labelledby="tabAccountAddressLabel">
+                                    <form class="mt-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 col-lg-6">
+                                                <div class="row">
+                                                        <div class="col-12">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressStreetNumber" class="sr-only">Street Number</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreetNumber" aria-describedby="" placeholder="Street No.">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressStreet" class="sr-only">Street</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreet" aria-describedby="" placeholder="Street">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-6 pr-0">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressWard" class="sr-only">Ward</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressWard" aria-describedby="" placeholder="Ward">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressDistrict" class="sr-only">District</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressDistrict" aria-describedby="" placeholder="District">
+                                                                    </div>
+                                                        </div>
+                                                        
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-4 pr-0">
+                                                                <div class="form-group"> 
+                                                                        <label for="formAddressZip" class="sr-only">Zip Code</label>
+                                                                        <input type="number" value="" class="form-control myInput-elegant-2" id="formAddressZip" placeholder="Zip Code">
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4 pr-0">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressCity" class="sr-only">State / City</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCity" aria-describedby="" placeholder="State / City">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressCountry" class="sr-only">Country</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCountry" aria-describedby="" placeholder="Country">
+                                                                    </div>
+                                                        </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <button type="submit" class="btn myBtn-fill mb-3">Update</button>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="tabAccountPayment" role="tabpanel" aria-labelledby="tabAccountPaymentLabel">
+                                    <form class="mt-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 col-lg-6">
+                                                <!-- Colllap paypal -->
+                                                <div class="row mb-2">
+                                                    <div class="col-12">
+                                                            <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between px-0" data-toggle="collapse" data-target="#collapsePaypal" aria-controls="collapsePaypal"
+                                                            aria-expanded="false">
+                                                            <span><b>PayPal</b></span>
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="collapse" id="collapsePaypal">
+                                                                <div class="form-group">
+                                                                        <label for="formPaymentEmail" class="sr-only">Paypal Email:</label>
+                                                                        <input type="email" class="form-control myInput-elegant-3" id="formPaymentEmail" placeholder="Paypal Email">
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Collapse Card -->
+                                                <div class="row mb-2">
+                                                        <div class="col-12">
+                                                                <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between px-0" data-toggle="collapse" data-target="#collapseCard" aria-controls="collapseCard"
+                                                                aria-expanded="false">
+                                                                <span><b>Credit Card</b></span>
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="collapse" id="collapseCard">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="form-group"> 
+                                                                            <label for="formPaymentCardNumber" class="sr-only">Card Number</label>
+                                                                            <input type="number" value="" class="form-control myInput-elegant-2" id="formPaymentCardNumber" placeholder="Card Number">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="form-group"> 
+                                                                            <label for="formPaymentCardCVV" class="sr-only">Security Code</label>
+                                                                            <input type="number" value="" class="form-control myInput-elegant-2" id="formPaymentCardCVV" placeholder="Security Code (CVV)">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6 pr-0">
+                                                                            <div class="form-group w-100">
+                                                                                <label for="formPaymentExpireMonth" class="">Expire Month</label>
+                                                                                <select class="form-control myInput-elegant-2" id="formPaymentExpireMonth">
+                                                                                    <option>1</option>
+                                                                                    <option>2</option>
+                                                                                    <option>3</option>
+                                                                                    <option>4</option>
+                                                                                    <option>5</option>
+                                                                                    <option>6</option>
+                                                                                    <option>7</option>
+                                                                                    <option>8</option>
+                                                                                    <option>9</option>
+                                                                                    <option>10</option>
+                                                                                    <option>11</option>
+                                                                                    <option>12</option>
+                                                                                </select>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                            <div class="form-group"> 
+                                                                                    <label for="formPaymentExpireYear" class="">Expire Year</label>
+                                                                                    <input type="number" value="2020" class="form-control myInput-elegant-2" id="formPaymentExpireYear" placeholder="">
+                                                                                </div>
+                                                                    </div>
+                                                                    <!-- Doing -->
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <label for="formPaymentCardHolder" class="sr-only">Cardholder</label>
+                                                                            <input type="text" class="form-control myInput-elegant-3" id="formPaymentCardHolder" aria-describedby="" placeholder="Cardholder's Name">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <!-- <div class="row">
+                                                        <div class="col-12">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressStreetNumber" class="sr-only">Street Number</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreetNumber" aria-describedby="" placeholder="Street No.">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressStreet" class="sr-only">Street</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreet" aria-describedby="" placeholder="Street">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-6 pr-0">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressWard" class="sr-only">Ward</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressWard" aria-describedby="" placeholder="Ward">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressDistrict" class="sr-only">District</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressDistrict" aria-describedby="" placeholder="District">
+                                                                    </div>
+                                                        </div>
+                                                        
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-4 pr-0">
+                                                                <div class="form-group"> 
+                                                                        <label for="formAddressZip" class="sr-only">Zip Code</label>
+                                                                        <input type="number" value="" class="form-control myInput-elegant-2" id="formAddressZip" placeholder="Zip Code">
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4 pr-0">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressCity" class="sr-only">State / City</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCity" aria-describedby="" placeholder="State / City">
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <div class="form-group">
+                                                                        <label for="formAddressCountry" class="sr-only">Country</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCountry" aria-describedby="" placeholder="Country">
+                                                                    </div>
+                                                        </div>
+                                                </div> -->
+                                                <div class="row mt-2">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <button type="submit" class="btn myBtn-fill mb-3">Update</button>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Do Second -->
+                    <div class="tab-pane fade" id="tabMainCart" role="tabpanel" aria-labelledby="tabMainCartLabel">Go CART</div>
+                    <div class="tab-pane fade" id="tabMainOrder" role="tabpanel" aria-labelledby="tabMainOrderLabel">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="tabOrderLabel" data-toggle="tab" href="#tabOrder" role="tab" aria-controls="tabOrder" aria-selected="true"><i class="fas fa-list-ul"></i> Orders</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="tabOrderList">
+                            <div class="tab-pane fade show active" id="tabOrder" role="tabpanel" aria-labelledby="tabOrderLabel">
+                                <div class="table-responsive-xl mt-4">
+                                    <table class="table table-striped table-light">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Order number</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Total</th>
+                                            <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <th scope="row"><a href="order-detail.html" target="_blank">#18050101</a></th>
+                                            <td>01-Jan-2018</td>
+                                            <td>$1,000</td>
+                                            <td>Complete</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row"><a href="order-detail.html" target="_blank">#18050101</a></th>
+                                            <td>01-Jan-2018</td>
+                                            <td>$1,000</td>
+                                            <td>Complete</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row"><a href="order-detail.html" target="_blank">#18050101</a></th>
+                                            <td>01-Jan-2018</td>
+                                            <td>$1,000</td>
+                                            <td>Complete</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabMainLogout" role="tabpanel" aria-labelledby="tabMainLogoutLabel">Go Logout</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal: LOGIN -->
+    <div class="modal fade" id="formLogin" tabindex="-1" role="dialog" aria-labelledby="formLoginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formLoginLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group mt-2">
+                            <label for="formLoginEmail" class="sr-only">Email address:</label>
+                            <input type="email" class="form-control myInput-elegant-3" id="formLoginEmail" aria-describedby="emailHelp" placeholder="Email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="formLoginPassword" class="sr-only">Password:</label>
+                            <input type="password" class="form-control myInput-elegant-3 mb-2" id="formLoginPassword" placeholder="Password">
+                            <a href="forgot.html" class="text-muted" target="_blank">
+                                <small>I forgot my password.</small>
+                            </a>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="formLoginRemember">
+                            <label class="form-check-label text-muted" for="formLoginRemember">Remember login</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <button type="submit" class="btn myBtn-fill">Log in</button>
+                            <a href="signup.html" class="text-muted mt-2 mb-2" target="_blank">
+                                <small>I don't have an account.</small>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal: SUBSCRIBE -->
+    <div class="modal fade" id="formSubscribe" tabindex="-1" role="dialog" aria-labelledby="formSubscribeLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Subscribe to our
+                        <b>Newsletters</b>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <span>
+                                <i>Let's stay in touch to get notified about our
+                                    <a href="product-list.html" class="myText-link"
+                                        target="_blank">newest Products &amp; Promotions.</a>
+                                </i>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubscribeName" class="sr-only">Your name:</label>
+                            <input type="text" class="form-control myInput-elegant-3" id="formSubscribeName" aria-describedby="" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubscribeEmail" class="sr-only">Email:</label>
+                            <input type="email" class="form-control myInput-elegant-3" id="formSubscribeEmail" placeholder="Your email address" aria-describedby="formSubscribeEmailHelp">
+                            <small id="formSubscribeEmailHelp" class="form-text text-muted mt-2">(We'll never share your email with anyone else.)</small>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <button type="submit" class="btn myBtn-fill">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <a href="../index.html" class="myBrand-logo" target="_blank">Brand</a>
+            </div>
+            <div class="row justify-content-center myFooter-social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#formSubscribe" target="_blank" title="Subscribe to our Newsletters" data-toggle="tooltip"
+                    data-placement="bottom">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+            <div class="row justify-content-center myFooter-policy mb-2">
+                <a href="#" target="_blank" class="text-dark">Terms of service</a>
+                <span> | </span>
+                <a href="#" target="_blank" class="text-dark">Privacy policy</a>
+            </div>
+            <div class="row justify-content-center myFooter-brand">
+                <a href="../index.html" class="m-0" target="_blank">&copy; Brand 2018</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Jumptop button -->
+    <div id="myJumptop" class="btn myBtn-jumptop" title="Jump to Top Screen" data-toggle="tooltip" data-placement="top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- Script -->
+    <script src="../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

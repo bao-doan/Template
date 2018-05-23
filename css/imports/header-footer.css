@@ -1,4 +1,9 @@
 /* Header | Footer | Body Buffer */
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+}
+/* body {font-family: Calibri;font-size: 18px;} */
 .myBody-buffer {
     height: 50vh; /* body buffer for very-short-content pages*/
 }
@@ -153,3 +158,23 @@
     background-image: url('../../img/background/background-1.jpg');
     object-fit: contain;
 }
+.myBg-new {background-color: olivedrab}
+.myBg-new2 {background-color: var(--myBlueGray2);}
+.myText-new2 * {color: white;}
+.myText-new2 * * {color: white;}
+.myText-new2 * *:hover {color: var(--myOrange);}
+
+.myBg-new a:hover {color: #FF4347}
+.myText-new a, .myText-new button, .myText-new i,  .myText-new input::placeholder {color: oldlace !important;}
+.myText-new input::placeholder {
+    text-align: center;
+}
+.myText-new input {
+    background: rgba(255,255,255,0);
+    color: white;
+}
+.myText-new input:focus {
+    background: rgba(255,255,255,0);
+    color: white;
+}
+
