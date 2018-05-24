@@ -4,6 +4,23 @@ body {
     /* font-family: 'Open Sans', sans-serif; */
 }
 /* body {font-family: Calibri;font-size: 18px;} */
+@media (max-width: 576px) {
+    .myCollapse-sm-center {
+        text-align: center;
+    };
+    .myCollapse-sm-left {
+        text-align: left;
+    };
+    .myCollapse-filter {
+        display: none;
+    }
+    .myCardBoard {
+        display: flex;
+        justify-content: center; 
+        /* Use: This let product cards play center when SM, play left when above SM */
+    }
+    
+}
 .myBody-buffer {
     height: 50vh; /* body buffer for very-short-content pages*/
 }
@@ -83,6 +100,12 @@ body {
 }
 .myText-indent {
     text-indent: 20px;
+}
+.myText-padding-left {
+    padding-left: 20px;
+}
+.myText-margin-left {
+    margin-left: 20px;
 }
 .myText-link {
     color: var(--myBlueGray2);
@@ -177,4 +200,99 @@ body {
     background: rgba(255,255,255,0);
     color: white;
 }
+.myCarousel img {
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.myTitle-home {
+    color: white;
+    background-color: var(--myBlueGray2);
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+.myCard {
+    border-radius: 0px;
+    border: none;
+}
+.myCard h5 a, .myCard h6 a {
+    text-decoration: none;
+    color: black;
+}
+.myBorder-bottom {
+    border-bottom: 1px solid var(--myBlackOpa2);
+}
+/* test site */
+.myCard-upper {
+    position: relative;
+    /* width: 100%; */
+}
+  
+.myCard-upper-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 
+}
+.myCard-upper-img img{
+    transform: scale(1.0);
+    transition: transform ease 0.4s;
+}
+.myCard-upper:hover .myCard-upper-img img {
+    transform: scale(1.1);
+    transition: transform ease 0.3s;
+}
+  
+.myCard-upper-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    transition: .5s ease;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: space-between;
+}
+  
+.myCard-upper:hover .myCard-upper-overlay {
+    /* background-color: rgba(0,0,0,0.2); */
+}
+.myCard-upper:hover .myCard-upper-overlay .myCard-btn {
+    display: block;
+}
+.myCard-promote {
+    width: 40px;height: 40px;
+    padding: 6px 0;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    border-radius: 25px;
+    margin-top: 2px;
+    margin-left: 2px;
+    text-align: center;
+}
+.myCard-btn {
+    display: none;
+    width: 40px;height: 40px;
+    padding: 6px 0;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    margin-top: 2px;
+    margin-left: 2px;
+    text-align: center;
+    /* position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+}
+.form-check-label:hover {
+    cursor: pointer;
+}

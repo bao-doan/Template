@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product List | Brand</title>
+    <!-- CSS Bootstrap & Custom & Fonts -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/font-awesome-5/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../vendor/hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" href="../css/ultil.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-light">
+        <a href="../index.html" class="myBrand-logo" target="_blank">Brand</a>
+        <div class="d-flex flex-row pr-3">
+            <a href="#" class="btn myBtn-icon myOutline text-dark" data-toggle="collapse" data-target="#collapseAccount" aria-controls="collapseAccount"
+                aria-expanded="false">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-angle-down"></i>
+            </a>
+
+            <div class="dropdown">
+                <a href="#" class="btn dropdown-toggle myBtn-icon myOutline text-dark" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-shopping-cart"></i>
+                    <b class="badge badge-danger">5</b>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right myDropdown-cart rounded-0 p-3" aria-labelledby="dropdownCart">
+                    <h5 class="mb-3">Your Cart:</h5>
+                    <div class="myCart d-flex flex-column">
+                        <div class="d-flex flex-column myCart-scroll mb-3">
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row myCart-product p-2">
+                                <div class="myCart-img mr-2">
+                                    <img src="../img/item/item-macbook-1.jpg" alt="">
+                                </div>
+                                <div class="myCart-item text-truncate">
+                                    <h6 class="myCart-name">
+                                        <a href="product-detail.html">Macbook Macbook Macbook Macbook</a>
+                                    </h6>
+                                    <p class="myCart-price">1 x $2,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column myCart-bottom">
+                            <span class="align-self-end mb-2">Total: $10,000</span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="cart.html" class="btn myBtn-fill mr-2" target="_blank">View Cart</a>
+                                <a href="checkout.html" class="btn myBtn-fill" target="_blank">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="collapseAccount">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="account.html">Account</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="" data-toggle="modal" data-target="#formLogin">Log in</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="signup.html">Sign up</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <!-- Button Collapse -->
+        <button class="navbar-toggler myBtn-icon myOutline fs-20 pl-0" type="button" data-toggle="collapse" data-target="#collapseMenu"
+            aria-controls="collapseMenu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button class="navbar-toggler myBtn-icon myOutline fs-20" type="button" data-toggle="collapse" data-target="#collapseSearch"
+            aria-controls="collapseSearch" aria-expanded="false">
+            <i class="fas fa-search"></i>
+            </span>
+        </button>
+        <!-- Collapse Menu -->
+        <div class="collapse navbar-collapse" id="collapseMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active myAnimate-border-bottom">
+                    <a class="nav-link" href="../index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown myDropdown myAnimate-border-bottom">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu myHover-dropdown rounded-0" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="product-list.html">Best Sellers</a>
+                        <a class="dropdown-item" href="product-list.html">On Sale</a>
+                        <a class="dropdown-item" href="product-list.html">New Arrivals</a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item" href="product-list.html">Coming Soon</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown myDropdown myAnimate-border-bottom">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProduct" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="navbarProduct">
+                        <a class="dropdown-item" href="product-list.html">Laptop</a>
+                        <a class="dropdown-item" href="product-list.html">Macbook</a>
+                        <a class="dropdown-item" href="product-list.html">iPhone</a>
+                        <a class="dropdown-item" href="product-list.html">iPad</a>
+                        <a class="dropdown-item" href="product-list.html">Smartphone</a>
+                        <a class="dropdown-item" href="product-list.html">Camera</a>
+                        <!-- *** Test site *** -->
+                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarAccessories" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Accessories</a>
+                        <div class="dropdown-menu ml-4 rounded-0" aria-labelledby="navbarAccessories">
+                            <a class="dropdown-item" href="product-list.html">Headphone</a>
+                            <a class="dropdown-item" href="product-list.html">Wireless mouse</a>
+                            <a class="dropdown-item" href="product-list.html">Camera len</a>
+                            <a class="dropdown-item" href="product-list.html">Camera flash</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item myAnimate-border-bottom">
+                    <a class="nav-link" href="about.html" target="_blank">About</a>
+                </li>
+                <li class="nav-item myAnimate-border-bottom">
+                    <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Collapse Search -->
+        <div class="collapse navbar-collapse" id="collapseSearch">
+            <div class="input-group">
+                <input type="text" class="form-control myInput-elegant myOutline" placeholder="Find products..." aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary myBtn-icon w-auto" type="button">Go</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container-fluid myTitle py-3">
+        <div class="container">
+            <div class="row flex-column">
+                <h3 class="">PRODUCT LIST</h3>
+                <nav aria-label="breadcrumb myBreadcrum">
+                    <ol class="breadcrumb myBreadcrum">
+                        <li class="breadcrumb-item">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Product list</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Colllape filter -->
+            <div class="col-12 col-sm-4 col-md-3 mb-3 bg-light">
+                <div class="row">
+                    <div class="col-12 bg-secondary">
+                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapseFilter" aria-controls="collapseFilter"
+                        aria-expanded="false">
+                        <span class="text-white"><b>Filter by</b></span>
+                        <i class="fas fa-angle-down fs-23 text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mx-0">
+                    <div class="col-12 px-0">
+                        <div class="collapse show" id="collapseFilter">
+                            <!-- Sub collapse: categories -->
+                            <div class="row mx-0">
+                                <div class="col-12 px-0">
+                                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapseCategories" aria-controls="collapseCategories"
+                                        aria-expanded="false">
+                                        <span class="myText-padding-left"><b>Categories</b></span>
+                                        <i class="fas fa-angle-down"></i></a>
+                                </div>
+                                <div class="col-12 px-0">
+                                    <div class="collapse show myCollapse-filter myText-margin-left myBorder-bottom" id="collapseCategories">
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkAll">
+                                                    <label class="form-check-label" for="checkAll">All</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkLaptop">
+                                                    <label class="form-check-label" for="checkLaptop">Laptop</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkIphone">
+                                                    <label class="form-check-label" for="checkIphone">iPhone</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkIpad">
+                                                    <label class="form-check-label" for="checkIpad">iPad</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkSmartphone">
+                                                    <label class="form-check-label" for="checkSmartphone">Smartphone</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkCamera">
+                                                    <label class="form-check-label" for="checkCamera">Camera</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkAccessories">
+                                                    <label class="form-check-label" for="checkAccessories">Accessories</label>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sub collapse: brands -->
+                            <div class="row mx-0">
+                                <div class="col-12 px-0">
+                                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapseBrand" aria-controls="collapseBrand"
+                                        aria-expanded="false">
+                                        <span class="myText-margin-left"><b>Brands</b></span>
+                                        <i class="fas fa-angle-down"></i></a>
+                                </div>
+                                <div class="col-12 px-0">
+                                    <div class="collapse show myCollapse-filter myText-margin-left myBorder-bottom" id="collapseBrand">
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkApple">
+                                                    <label class="form-check-label" for="checkApple">Apple</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkMicrosoft">
+                                                    <label class="form-check-label" for="checkMicrosoft">Microsoft</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkAsus">
+                                                    <label class="form-check-label" for="checkAsus">Asus</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkSamsung">
+                                                    <label class="form-check-label" for="checkSamsung">Samsung</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkCanon">
+                                                    <label class="form-check-label" for="checkCanon">Canon</label>
+                                            </div>
+                                            <div class="form-group form-check mb-1">
+                                                    <input type="checkbox" class="form-check-input" id="checkNikon">
+                                                    <label class="form-check-label" for="checkNikon">Nikon</label>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sub collapse: price ranges -->
+                            <div class="row mx-0">
+                                <div class="col-12 px-0">
+                                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapsePrice" aria-controls="collapsePrice"
+                                        aria-expanded="false">
+                                        <span class="myText-margin-left"><b>Prices</b></span>
+                                        <i class="fas fa-angle-down"></i></a>
+                                </div>
+                                <div class="col-12 px-0">
+                                    <div class="collapse show myCollapse-filter myText-margin-left myBorder-bottom" id="collapsePrice">
+                                        <div class="form-group form-check mb-1">
+                                                <input type="checkbox" class="form-check-input" id="checkPrice1">
+                                                <label class="form-check-label" for="checkPrice1">$0 - $100</label>
+                                        </div>
+                                        <div class="form-group form-check mb-1">
+                                                <input type="checkbox" class="form-check-input" id="checkPrice2">
+                                                <label class="form-check-label" for="checkPrice2">$100 - $500</label>
+                                        </div>
+                                        <div class="form-group form-check mb-1">
+                                                <input type="checkbox" class="form-check-input" id="checkPrice3">
+                                                <label class="form-check-label" for="checkPrice3">$500 - $700</label>
+                                        </div>
+                                        <div class="form-group form-check mb-1">
+                                                <input type="checkbox" class="form-check-input" id="checkPrice4">
+                                                <label class="form-check-label" for="checkPrice4">$700 - $800</label>
+                                        </div>
+                                        <div class="form-group form-check mb-1">
+                                                <input type="checkbox" class="form-check-input" id="checkPrice5">
+                                                <label class="form-check-label" for="checkPrice5">over $800
+                                </div>
+                            </div>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards of Products  -->
+            <div class="col-12 col-sm-8 col-md-9 mb-3 bg-light d-flex flex-column justify-content-between">
+                <div class="row myCardBoard mt-3">
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
+                        <div class="myCard-product">
+                            <div class="myCard-upper">
+                                <div class="myCard-upper-img">
+                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
+                                </div>
+                                <div class="myCard-upper-overlay">
+                                    <span class="myCard-promote btn-danger">New</span>
+                                    <div class="d-flex justify-content-around">
+                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
+                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
+                        <div class="myCard-product">
+                            <div class="myCard-upper">
+                                <div class="myCard-upper-img">
+                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
+                                </div>
+                                <div class="myCard-upper-overlay">
+                                    <span class="myCard-promote btn-danger">New</span>
+                                    <div class="d-flex justify-content-around">
+                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
+                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
+                        <div class="myCard-product">
+                            <div class="myCard-upper">
+                                <div class="myCard-upper-img">
+                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
+                                </div>
+                                <div class="myCard-upper-overlay">
+                                    <span class="myCard-promote btn-danger">New</span>
+                                    <div class="d-flex justify-content-around">
+                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
+                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
+                        <div class="myCard-product">
+                            <div class="myCard-upper">
+                                <div class="myCard-upper-img">
+                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
+                                </div>
+                                <div class="myCard-upper-overlay">
+                                    <span class="myCard-promote btn-danger">New</span>
+                                    <div class="d-flex justify-content-around">
+                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
+                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-self-center mt-3">
+                    <div class="col-12">
+                            <nav aria-label="...">
+                                    <ul class="pagination">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal: LOGIN -->
+    <div class="modal fade" id="formLogin" tabindex="-1" role="dialog" aria-labelledby="formLoginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formLoginLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group mt-2">
+                            <label for="formLoginEmail" class="sr-only">Email address:</label>
+                            <input type="email" class="form-control myInput-elegant-3" id="formLoginEmail" aria-describedby="emailHelp" placeholder="Email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="formLoginPassword" class="sr-only">Password:</label>
+                            <input type="password" class="form-control myInput-elegant-3 mb-2" id="formLoginPassword" placeholder="Password">
+                            <a href="forgot.html" class="text-muted" target="_blank">
+                                <small>I forgot my password.</small>
+                            </a>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="formLoginRemember">
+                            <label class="form-check-label text-muted" for="formLoginRemember">Remember login</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <button type="submit" class="btn myBtn-fill">Log in</button>
+                            <a href="signup.html" class="text-muted mt-2 mb-2" target="_blank">
+                                <small>I don't have an account.</small>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal: SUBSCRIBE -->
+    <div class="modal fade" id="formSubscribe" tabindex="-1" role="dialog" aria-labelledby="formSubscribeLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Subscribe to our
+                        <b>Newsletters</b>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <span>
+                                <i>Let's stay in touch to get notified about our
+                                    <a href="product-list.html" class="myText-link" target="_blank">newest Products &amp; Promotions.</a>
+                                </i>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubscribeName" class="sr-only">Your name:</label>
+                            <input type="text" class="form-control myInput-elegant-3" id="formSubscribeName" aria-describedby="" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubscribeEmail" class="sr-only">Email:</label>
+                            <input type="email" class="form-control myInput-elegant-3" id="formSubscribeEmail" placeholder="Your email address" aria-describedby="formSubscribeEmailHelp">
+                            <small id="formSubscribeEmailHelp" class="form-text text-muted mt-2">(We'll never share your email with anyone else.)</small>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <button type="submit" class="btn myBtn-fill">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <a href="../index.html" class="myBrand-logo" target="_blank">Brand</a>
+            </div>
+            <div class="row justify-content-center myFooter-social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#formSubscribe" target="_blank" title="Subscribe to our Newsletters" data-toggle="tooltip"
+                    data-placement="bottom">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+            <div class="row justify-content-center myFooter-policy mb-2">
+                <a href="#" target="_blank" class="text-dark">Terms of service</a>
+                <span> | </span>
+                <a href="#" target="_blank" class="text-dark">Privacy policy</a>
+            </div>
+            <div class="row justify-content-center myFooter-brand">
+                <a href="../index.html" class="m-0" target="_blank">&copy; Brand 2018</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Jumptop button -->
+    <div id="myJumptop" class="btn myBtn-jumptop" title="Jump to Top Screen" data-toggle="tooltip" data-placement="top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- Script -->
+    <script src="../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

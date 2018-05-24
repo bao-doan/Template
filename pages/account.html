@@ -234,333 +234,286 @@
                                 <a class="nav-item nav-link" id="tabAccountPaymentLabel" data-toggle="tab" href="#tabAccountPayment" role="tab" aria-controls="tabAccountPayment" aria-selected="false"><i class="fas fa-dollar-sign"></i> Payment</a>
                             </div>
                         </nav>
-                            <div class="tab-content" id="tabAccount">
-                                <div class="tab-pane fade show active" id="tabAccountInfo" role="tabpanel" aria-labelledby="tabAccountInfoLabel">
-                                    <form class="mt-4">
-                                        <div class="row">
-                                            <div class="col-12 col-md-10 col-lg-6">
-                                                <div class="row">
-                                                        <div class="col-4">
-                                                                <div class="form-group w-100">
-                                                                        <label for="formSignupGender" class="sr-only">Gender</label>
-                                                                        <select class="form-control myInput-elegant-2" id="formSignupGender">
-                                                                            <option>Mr.</option>
-                                                                            <option>Ms.</option>
-                                                                        </select>
+                        <div class="tab-content" id="tabAccount">
+                            <div class="tab-pane fade show active" id="tabAccountInfo" role="tabpanel" aria-labelledby="tabAccountInfoLabel">
+                                <form class="mt-4">
+                                    <div class="row">
+                                        <div class="col-12 col-md-10 col-lg-6">
+                                            <div class="row">
+                                                    <div class="col-4">
+                                                            <div class="form-group w-100">
+                                                                    <label for="formSignupGender" class="sr-only">Gender</label>
+                                                                    <select class="form-control myInput-elegant-2" id="formSignupGender">
+                                                                        <option>Mr.</option>
+                                                                        <option>Ms.</option>
+                                                                    </select>
+                                                            </div>
+                                                    </div>
+                                                    
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col-6 pr-1">
+                                                            <div class="form-group">
+                                                                    <label for="formSignupFirstname" class="sr-only">First Name:</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formSignupFirstname" aria-describedby="" placeholder="First Name">
                                                                 </div>
-                                                        </div>
-                                                        
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-6 pr-1">
-                                                                <div class="form-group">
-                                                                        <label for="formSignupFirstname" class="sr-only">First Name:</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formSignupFirstname" aria-describedby="" placeholder="First Name">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="form-group">
-                                                                        <label for="formSignupLastname" class="sr-only">Last Name:</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formSignupLastname" aria-describedby="" placeholder="Last Name">
-                                                                    </div>
-                                                        </div>
-                                                        
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-4 pr-0">
-                                                                <div class="form-group w-100">
-                                                                        <label for="formAccountBirthday" class="sr-only">Day</label>
-                                                                        <select class="form-control myInput-elegant-2" id="formAccountBirthday">
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
-                                                                            <option>6</option>
-                                                                            <option>7</option>
-                                                                            <option>8</option>
-                                                                            <option>9</option>
-                                                                            <option>10</option>
-                                                                            <option>11</option>
-                                                                            <option>12</option>
-                                                                            <option>13</option>
-                                                                            <option>14</option>
-                                                                            <option>15</option>
-                                                                            <option>16</option>
-                                                                            <option>17</option>
-                                                                            <option>18</option>
-                                                                            <option>19</option>
-                                                                            <option>20</option>
-                                                                            <option>21</option>
-                                                                            <option>22</option>
-                                                                            <option>23</option>
-                                                                            <option>24</option>
-                                                                            <option>25</option>
-                                                                            <option>26</option>
-                                                                            <option>27</option>
-                                                                            <option>28</option>
-                                                                            <option>29</option>
-                                                                            <option>30</option>
-                                                                            <option>31</option>
-                                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                            <div class="form-group">
+                                                                    <label for="formSignupLastname" class="sr-only">Last Name:</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formSignupLastname" aria-describedby="" placeholder="Last Name">
                                                                 </div>
-                                                        </div>
-                                                        <div class="col-4 pr-0">
-                                                                <div class="form-group w-100">
-                                                                        <label for="formAccountBirthmonth" class="sr-only">Month</label>
-                                                                        <select class="form-control myInput-elegant-2" id="formAccountBirthmonth">
-                                                                            <option>January</option>
-                                                                            <option>February</option>
-                                                                            <option>March</option>
-                                                                            <option>April</option>
-                                                                            <option>May</option>
-                                                                            <option>June</option>
-                                                                            <option>July</option>
-                                                                            <option>August</option>
-                                                                            <option>September</option>
-                                                                            <option>October</option>
-                                                                            <option>November</option>
-                                                                            <option>December</option>
-                                                                        </select>
-                                                                </div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                                <div class="form-group"> 
-                                                                        <label for="formAccountBirthyear" class="sr-only">BirthYear</label>
-                                                                        <input type="number" value="1995" class="form-control myInput-elegant-2" id="formAccountBirthyear" placeholder="Year">
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
+                                                    </div>
+                                                    
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col-4 pr-0">
+                                                            <div class="form-group w-100">
+                                                                    <label for="formAccountBirthday" class="sr-only">Day</label>
+                                                                    <select class="form-control myInput-elegant-2" id="formAccountBirthday">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                        <option>6</option>
+                                                                        <option>7</option>
+                                                                        <option>8</option>
+                                                                        <option>9</option>
+                                                                        <option>10</option>
+                                                                        <option>11</option>
+                                                                        <option>12</option>
+                                                                        <option>13</option>
+                                                                        <option>14</option>
+                                                                        <option>15</option>
+                                                                        <option>16</option>
+                                                                        <option>17</option>
+                                                                        <option>18</option>
+                                                                        <option>19</option>
+                                                                        <option>20</option>
+                                                                        <option>21</option>
+                                                                        <option>22</option>
+                                                                        <option>23</option>
+                                                                        <option>24</option>
+                                                                        <option>25</option>
+                                                                        <option>26</option>
+                                                                        <option>27</option>
+                                                                        <option>28</option>
+                                                                        <option>29</option>
+                                                                        <option>30</option>
+                                                                        <option>31</option>
+                                                                    </select>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-4 pr-0">
+                                                            <div class="form-group w-100">
+                                                                    <label for="formAccountBirthmonth" class="sr-only">Month</label>
+                                                                    <select class="form-control myInput-elegant-2" id="formAccountBirthmonth">
+                                                                        <option>January</option>
+                                                                        <option>February</option>
+                                                                        <option>March</option>
+                                                                        <option>April</option>
+                                                                        <option>May</option>
+                                                                        <option>June</option>
+                                                                        <option>July</option>
+                                                                        <option>August</option>
+                                                                        <option>September</option>
+                                                                        <option>October</option>
+                                                                        <option>November</option>
+                                                                        <option>December</option>
+                                                                    </select>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-4">
                                                             <div class="form-group"> 
-                                                                    <label for="formAccountPhone" class="sr-only">Phone Number</label>
-                                                                    <input type="number" value="" class="form-control myInput-elegant-2" id="formAccountPhone" placeholder="Phone Number">
+                                                                    <label for="formAccountBirthyear" class="sr-only">BirthYear</label>
+                                                                    <input type="number" value="1995" class="form-control myInput-elegant-2" id="formAccountBirthyear" placeholder="Year">
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                        <div class="form-group"> 
+                                                                <label for="formAccountPhone" class="sr-only">Phone Number</label>
+                                                                <input type="number" value="" class="form-control myInput-elegant-2" id="formAccountPhone" placeholder="Phone Number">
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col-12">
+                                                            <div class="form-group">
+                                                                    <label for="formSignupEmail" class="sr-only">Email:</label>
+                                                                    <input type="email" class="form-control myInput-elegant-3" id="formSignupEmail" placeholder="Email">
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                            <div class="form-group">
+                                                                    <label for="formSignupPassword" class="sr-only">Password:</label>
+                                                                    <input type="password" class="form-control myInput-elegant-3" id="formSignupPassword" placeholder="Password">
+                                                                </div>
+                                                    </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <button type="submit" class="btn myBtn-fill mb-3">Update</button>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="tabAccountAddress" role="tabpanel" aria-labelledby="tabAccountAddressLabel">
+                                <form class="mt-4">
+                                    <div class="row">
+                                        <div class="col-12 col-md-10 col-lg-6">
+                                            <div class="row">
+                                                    <div class="col-12">
+                                                            <div class="form-group">
+                                                                    <label for="formAddressStreetNumber" class="sr-only">Street Number</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formAddressStreetNumber" aria-describedby="" placeholder="Street No.">
+                                                                </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                            <div class="form-group">
+                                                                    <label for="formAddressStreet" class="sr-only">Street</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formAddressStreet" aria-describedby="" placeholder="Street">
+                                                                </div>
+                                                    </div>
+                                                    <div class="col-6 pr-0">
+                                                            <div class="form-group">
+                                                                    <label for="formAddressWard" class="sr-only">Ward</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formAddressWard" aria-describedby="" placeholder="Ward">
+                                                                </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                            <div class="form-group">
+                                                                    <label for="formAddressDistrict" class="sr-only">District</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formAddressDistrict" aria-describedby="" placeholder="District">
+                                                                </div>
+                                                    </div>
+                                                    
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col-4 pr-0">
+                                                            <div class="form-group"> 
+                                                                    <label for="formAddressZip" class="sr-only">Zip Code</label>
+                                                                    <input type="number" value="" class="form-control myInput-elegant-2" id="formAddressZip" placeholder="Zip Code">
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-4 pr-0">
+                                                            <div class="form-group">
+                                                                    <label for="formAddressCity" class="sr-only">State / City</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formAddressCity" aria-describedby="" placeholder="State / City">
+                                                                </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                            <div class="form-group">
+                                                                    <label for="formAddressCountry" class="sr-only">Country</label>
+                                                                    <input type="text" class="form-control myInput-elegant-3" id="formAddressCountry" aria-describedby="" placeholder="Country">
+                                                                </div>
+                                                    </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <button type="submit" class="btn myBtn-fill mb-3">Update</button>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="tabAccountPayment" role="tabpanel" aria-labelledby="tabAccountPaymentLabel">
+                                <form class="mt-4">
+                                    <div class="row">
+                                        <div class="col-12 col-md-10 col-lg-6">
+                                            <!-- Colllap paypal -->
+                                            <div class="row mb-2">
+                                                <div class="col-12">
+                                                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between px-0" data-toggle="collapse" data-target="#collapsePaypal" aria-controls="collapsePaypal"
+                                                        aria-expanded="false">
+                                                        <span><b>PayPal</b></span>
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="collapse" id="collapsePaypal">
+                                                            <div class="form-group">
+                                                                    <label for="formPaymentEmail" class="sr-only">Paypal Email:</label>
+                                                                    <input type="email" class="form-control myInput-elegant-3" id="formPaymentEmail" placeholder="Paypal Email">
                                                             </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                        <div class="col-12">
-                                                                <div class="form-group">
-                                                                        <label for="formSignupEmail" class="sr-only">Email:</label>
-                                                                        <input type="email" class="form-control myInput-elegant-3" id="formSignupEmail" placeholder="Email">
-                                                                </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                                <div class="form-group">
-                                                                        <label for="formSignupPassword" class="sr-only">Password:</label>
-                                                                        <input type="password" class="form-control myInput-elegant-3" id="formSignupPassword" placeholder="Password">
-                                                                    </div>
-                                                        </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                        <div class="col-12 d-flex justify-content-center">
-                                                            <button type="submit" class="btn myBtn-fill mb-3">Update</button>
-                                                        </div>
-                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="tab-pane fade" id="tabAccountAddress" role="tabpanel" aria-labelledby="tabAccountAddressLabel">
-                                    <form class="mt-4">
-                                        <div class="row">
-                                            <div class="col-12 col-md-10 col-lg-6">
-                                                <div class="row">
-                                                        <div class="col-12">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressStreetNumber" class="sr-only">Street Number</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreetNumber" aria-describedby="" placeholder="Street No.">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressStreet" class="sr-only">Street</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreet" aria-describedby="" placeholder="Street">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-6 pr-0">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressWard" class="sr-only">Ward</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressWard" aria-describedby="" placeholder="Ward">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressDistrict" class="sr-only">District</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressDistrict" aria-describedby="" placeholder="District">
-                                                                    </div>
-                                                        </div>
-                                                        
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-4 pr-0">
-                                                                <div class="form-group"> 
-                                                                        <label for="formAddressZip" class="sr-only">Zip Code</label>
-                                                                        <input type="number" value="" class="form-control myInput-elegant-2" id="formAddressZip" placeholder="Zip Code">
-                                                                </div>
-                                                        </div>
-                                                        <div class="col-4 pr-0">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressCity" class="sr-only">State / City</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCity" aria-describedby="" placeholder="State / City">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressCountry" class="sr-only">Country</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCountry" aria-describedby="" placeholder="Country">
-                                                                    </div>
-                                                        </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                        <div class="col-12 d-flex justify-content-center">
-                                                            <button type="submit" class="btn myBtn-fill mb-3">Update</button>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="tab-pane fade" id="tabAccountPayment" role="tabpanel" aria-labelledby="tabAccountPaymentLabel">
-                                    <form class="mt-4">
-                                        <div class="row">
-                                            <div class="col-12 col-md-10 col-lg-6">
-                                                <!-- Colllap paypal -->
-                                                <div class="row mb-2">
+                                            <!-- Collapse Card -->
+                                            <div class="row mb-2">
                                                     <div class="col-12">
-                                                            <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between px-0" data-toggle="collapse" data-target="#collapsePaypal" aria-controls="collapsePaypal"
+                                                            <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between px-0" data-toggle="collapse" data-target="#collapseCard" aria-controls="collapseCard"
                                                             aria-expanded="false">
-                                                            <span><b>PayPal</b></span>
+                                                            <span><b>Credit Card</b></span>
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <div class="collapse" id="collapsePaypal">
-                                                                <div class="form-group">
-                                                                        <label for="formPaymentEmail" class="sr-only">Paypal Email:</label>
-                                                                        <input type="email" class="form-control myInput-elegant-3" id="formPaymentEmail" placeholder="Paypal Email">
+                                                        <div class="collapse" id="collapseCard">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group"> 
+                                                                        <label for="formPaymentCardNumber" class="sr-only">Card Number</label>
+                                                                        <input type="number" value="" class="form-control myInput-elegant-2" id="formPaymentCardNumber" placeholder="Card Number">
+                                                                    </div>
                                                                 </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Collapse Card -->
-                                                <div class="row mb-2">
-                                                        <div class="col-12">
-                                                                <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between px-0" data-toggle="collapse" data-target="#collapseCard" aria-controls="collapseCard"
-                                                                aria-expanded="false">
-                                                                <span><b>Credit Card</b></span>
-                                                                <i class="fas fa-angle-down"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="collapse" id="collapseCard">
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <div class="form-group"> 
-                                                                            <label for="formPaymentCardNumber" class="sr-only">Card Number</label>
-                                                                            <input type="number" value="" class="form-control myInput-elegant-2" id="formPaymentCardNumber" placeholder="Card Number">
-                                                                        </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group"> 
+                                                                        <label for="formPaymentCardCVV" class="sr-only">Security Code</label>
+                                                                        <input type="number" value="" class="form-control myInput-elegant-2" id="formPaymentCardCVV" placeholder="Security Code (CVV)">
                                                                     </div>
-                                                                    <div class="col-12">
-                                                                        <div class="form-group"> 
-                                                                            <label for="formPaymentCardCVV" class="sr-only">Security Code</label>
-                                                                            <input type="number" value="" class="form-control myInput-elegant-2" id="formPaymentCardCVV" placeholder="Security Code (CVV)">
+                                                                </div>
+                                                                <div class="col-6 pr-0">
+                                                                        <div class="form-group w-100">
+                                                                            <label for="formPaymentExpireMonth" class="">Expire Month</label>
+                                                                            <select class="form-control myInput-elegant-2" id="formPaymentExpireMonth">
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option>4</option>
+                                                                                <option>5</option>
+                                                                                <option>6</option>
+                                                                                <option>7</option>
+                                                                                <option>8</option>
+                                                                                <option>9</option>
+                                                                                <option>10</option>
+                                                                                <option>11</option>
+                                                                                <option>12</option>
+                                                                            </select>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="col-6 pr-0">
-                                                                            <div class="form-group w-100">
-                                                                                <label for="formPaymentExpireMonth" class="">Expire Month</label>
-                                                                                <select class="form-control myInput-elegant-2" id="formPaymentExpireMonth">
-                                                                                    <option>1</option>
-                                                                                    <option>2</option>
-                                                                                    <option>3</option>
-                                                                                    <option>4</option>
-                                                                                    <option>5</option>
-                                                                                    <option>6</option>
-                                                                                    <option>7</option>
-                                                                                    <option>8</option>
-                                                                                    <option>9</option>
-                                                                                    <option>10</option>
-                                                                                    <option>11</option>
-                                                                                    <option>12</option>
-                                                                                </select>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                        <div class="form-group"> 
+                                                                                <label for="formPaymentExpireYear" class="">Expire Year</label>
+                                                                                <input type="number" value="2020" class="form-control myInput-elegant-2" id="formPaymentExpireYear" placeholder="">
                                                                             </div>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                            <div class="form-group"> 
-                                                                                    <label for="formPaymentExpireYear" class="">Expire Year</label>
-                                                                                    <input type="number" value="2020" class="form-control myInput-elegant-2" id="formPaymentExpireYear" placeholder="">
-                                                                                </div>
-                                                                    </div>
-                                                                    <!-- Doing -->
-                                                                    <div class="col-12">
-                                                                        <div class="form-group">
-                                                                            <label for="formPaymentCardHolder" class="sr-only">Cardholder</label>
-                                                                            <input type="text" class="form-control myInput-elegant-3" id="formPaymentCardHolder" aria-describedby="" placeholder="Cardholder's Name">
-                                                                        </div>
+                                                                </div>
+                                                                <!-- Doing -->
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="formPaymentCardHolder" class="sr-only">Cardholder</label>
+                                                                        <input type="text" class="form-control myInput-elegant-3" id="formPaymentCardHolder" aria-describedby="" placeholder="Cardholder's Name">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                </div>
-                                                <!-- <div class="row">
-                                                        <div class="col-12">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressStreetNumber" class="sr-only">Street Number</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreetNumber" aria-describedby="" placeholder="Street No.">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressStreet" class="sr-only">Street</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressStreet" aria-describedby="" placeholder="Street">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-6 pr-0">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressWard" class="sr-only">Ward</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressWard" aria-describedby="" placeholder="Ward">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressDistrict" class="sr-only">District</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressDistrict" aria-describedby="" placeholder="District">
-                                                                    </div>
-                                                        </div>
-                                                        
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-4 pr-0">
-                                                                <div class="form-group"> 
-                                                                        <label for="formAddressZip" class="sr-only">Zip Code</label>
-                                                                        <input type="number" value="" class="form-control myInput-elegant-2" id="formAddressZip" placeholder="Zip Code">
-                                                                </div>
-                                                        </div>
-                                                        <div class="col-4 pr-0">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressCity" class="sr-only">State / City</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCity" aria-describedby="" placeholder="State / City">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                                <div class="form-group">
-                                                                        <label for="formAddressCountry" class="sr-only">Country</label>
-                                                                        <input type="text" class="form-control myInput-elegant-3" id="formAddressCountry" aria-describedby="" placeholder="Country">
-                                                                    </div>
-                                                        </div>
-                                                </div> -->
-                                                <div class="row mt-2">
-                                                        <div class="col-12 d-flex justify-content-center">
-                                                            <button type="submit" class="btn myBtn-fill mb-3">Update</button>
-                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <button type="submit" class="btn myBtn-fill mb-3">Update</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
+                        </div>
                     </div>
                     <!-- Do Second -->
                     <div class="tab-pane fade" id="tabMainCart" role="tabpanel" aria-labelledby="tabMainCartLabel">Go CART</div>
