@@ -1,9 +1,7 @@
 /* Header | Footer | Body Buffer */
 body {
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'San Francisco', sans-serif; */
 }
-/* body {font-family: Calibri;font-size: 18px;} */
 @media (max-width: 576px) {
     .myCollapse-sm-center {
         text-align: center;
@@ -26,7 +24,8 @@ body {
 }
 .myBrand-logo {
     font-family: monoton;
-    font-size: 30px;
+    font-size: 1.875rem; 
+    /* ~30px | root: 16px */
     color: rgba(0,0,0,.8);
 }
 .myBrand-logo:hover {
