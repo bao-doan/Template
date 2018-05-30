@@ -21,9 +21,8 @@ input,a,button,textarea,select:focus {
     color: white;
 }
 .myBtn-fill:hover {
-    background-color: white;
-    border: 2px solid var(--myBlueGray2);
-    color: var(--myBlueGray2);
+    background-color: var(--myOrange);
+    color: white;
 }
 .myBtn-outline {
     background-color: white;
@@ -31,9 +30,8 @@ input,a,button,textarea,select:focus {
     color: var(--myBlueGray2);
 }
 .myBtn-outline:hover {
-    background-color: var(--myBlueGray2);
-    border: 2px solid transparent;
-    color: white;
+    border: 2px solid var(--myOrange);
+    color: var(--myOrange);
 }
 .myBtn-jumptop {
     display: none;

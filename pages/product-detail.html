@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product List | Brand</title>
+    <title>Product Details | Brand</title>
     <!-- CSS Bootstrap & Custom & Fonts -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../vendor/font-awesome-5/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="../vendor/hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" href="../vendor/ekko-lightbox/ekko-lightbox.css">
     <link rel="stylesheet" href="../css/ultil.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -194,257 +195,263 @@
         </div>
     </nav>
     <!-- Main Content -->
-    <div class="container-fluid myTitle py-3">
+    <div class="container-fluid myTitle mb-0">
         <div class="container">
-            <div class="row flex-column">
-                <h3 class="">PRODUCT LIST</h3>
+            <div class="row flex-column mb-0">
+                <!-- <h3 class="">PRODUCT DETAILS</h3> -->
                 <nav aria-label="breadcrumb myBreadcrum">
                     <ol class="breadcrumb myBreadcrum">
                         <li class="breadcrumb-item">
                             <a href="../index.html">Home</a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Product list</li>
+                        <li class="breadcrumb-item active" aria-current="page">Product details</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <!-- Colllape filter -->
-            <div class="col-12 col-sm-4 col-md-3 mb-3 bg-light">
+        <div class="row py-3 mb-2 bg-light">
+            <!-- Advanced Carousel-->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
                 <div class="row">
-                    <div class="col-12 bg-secondary">
-                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapseFilter" aria-controls="collapseFilter"
-                        aria-expanded="false">
-                        <span class="text-white"><b>Filter by</b></span>
-                        <i class="fas fa-angle-down fs-23 text-white"></i>
-                        </a>
+                    <div class="col-12 mb-2">
+                        <div id="carouselProductIndicator" class="carousel slide myCarousel" data-ride="carousel">
+                            <div class="carousel-inner myCarousel-img-view">
+                                <div class="carousel-item active">
+                                    <a href="../img/item/item-camera-1.jpg" data-toggle="lightbox" data-gallery="gallery">
+                                        <img class="d-block w-100" src="../img/item/item-camera-1.jpg" alt="First slide">
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="../img/item/item-camera-2.jpg" data-toggle="lightbox" data-gallery="gallery">
+                                        <img class="d-block w-100" src="../img/item/item-camera-2.jpg" alt="Second slide">
+                                    </a>
+                                </div>
+                                <div class="carousel-item"> 
+                                    <a href="../img/item/item-camera-3.jpg" data-toggle="lightbox" data-gallery="gallery">
+                                        <img class="d-block w-100" src="../img/item/item-camera-3.jpg" alt="Third slide">
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselProductIndicator" role="button" data-slide="prev">
+                               <i class="fas fa-angle-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselProductIndicator" role="button" data-slide="next">
+                                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-row flex-wrap myCarousel-img-nav">
+                        <div data-target="#carouselProductIndicator" data-slide-to="0" class="active">
+                            <img src="../img/item/item-camera-1.jpg" alt="" class="w-100">
+                        </div>
+                        <div data-target="#carouselProductIndicator" data-slide-to="1" class="">
+                            <img src="../img/item/item-camera-2.jpg" alt="" class="w-100">
+                        </div>
+                        <div data-target="#carouselProductIndicator" data-slide-to="2" class="">
+                            <img src="../img/item/item-camera-3.jpg" alt="" class="w-100">
+                        </div>
+                        <div data-target="#carouselProductIndicator" data-slide-to="2" class="">
+                            <img src="../img/item/item-camera-3.jpg" alt="" class="w-100">
+                        </div>
+                        <div data-target="#carouselProductIndicator" data-slide-to="2" class="">
+                            <img src="../img/item/item-camera-3.jpg" alt="" class="w-100">
+                        </div>
+                        <div data-target="#carouselProductIndicator" data-slide-to="2" class="">
+                            <img src="../img/item/item-camera-3.jpg" alt="" class="w-100">
+                        </div>
                     </div>
                 </div>
-                <div class="row mx-0">
-                    <div class="col-12 px-0">
-                        <div class="collapse show" id="collapseFilter">
-                            <!-- Sub collapse: categories -->
-                            <div class="row mx-0">
-                                <div class="col-12 px-0">
-                                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapseCategories" aria-controls="collapseCategories"
-                                        aria-expanded="false">
-                                        <span class="myText-padding-left"><b>Categories</b></span>
-                                        <i class="fas fa-angle-down"></i></a>
-                                </div>
-                                <div class="col-12 px-0">
-                                    <div class="collapse show myCollapse-filter myText-margin-left myBorder-bottom" id="collapseCategories">
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkAll">
-                                                    <label class="form-check-label" for="checkAll">All</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkLaptop">
-                                                    <label class="form-check-label" for="checkLaptop">Laptop</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkIphone">
-                                                    <label class="form-check-label" for="checkIphone">iPhone</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkIpad">
-                                                    <label class="form-check-label" for="checkIpad">iPad</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkSmartphone">
-                                                    <label class="form-check-label" for="checkSmartphone">Smartphone</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkCamera">
-                                                    <label class="form-check-label" for="checkCamera">Camera</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkAccessories">
-                                                    <label class="form-check-label" for="checkAccessories">Accessories</label>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Sub collapse: brands -->
-                            <div class="row mx-0">
-                                <div class="col-12 px-0">
-                                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapseBrand" aria-controls="collapseBrand"
-                                        aria-expanded="false">
-                                        <span class="myText-margin-left"><b>Brands</b></span>
-                                        <i class="fas fa-angle-down"></i></a>
-                                </div>
-                                <div class="col-12 px-0">
-                                    <div class="collapse show myCollapse-filter myText-margin-left myBorder-bottom" id="collapseBrand">
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkApple">
-                                                    <label class="form-check-label" for="checkApple">Apple</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkMicrosoft">
-                                                    <label class="form-check-label" for="checkMicrosoft">Microsoft</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkAsus">
-                                                    <label class="form-check-label" for="checkAsus">Asus</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkSamsung">
-                                                    <label class="form-check-label" for="checkSamsung">Samsung</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkCanon">
-                                                    <label class="form-check-label" for="checkCanon">Canon</label>
-                                            </div>
-                                            <div class="form-group form-check mb-1">
-                                                    <input type="checkbox" class="form-check-input" id="checkNikon">
-                                                    <label class="form-check-label" for="checkNikon">Nikon</label>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Sub collapse: price ranges -->
-                            <div class="row mx-0">
-                                <div class="col-12 px-0">
-                                        <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapsePrice" aria-controls="collapsePrice"
-                                        aria-expanded="false">
-                                        <span class="myText-margin-left"><b>Prices</b></span>
-                                        <i class="fas fa-angle-down"></i></a>
-                                </div>
-                                <div class="col-12 px-0">
-                                    <div class="collapse show myCollapse-filter myText-margin-left myBorder-bottom" id="collapsePrice">
-                                        <div class="form-group form-check mb-1">
-                                                <input type="checkbox" class="form-check-input" id="checkPrice1">
-                                                <label class="form-check-label" for="checkPrice1">$0 - $100</label>
-                                        </div>
-                                        <div class="form-group form-check mb-1">
-                                                <input type="checkbox" class="form-check-input" id="checkPrice2">
-                                                <label class="form-check-label" for="checkPrice2">$100 - $500</label>
-                                        </div>
-                                        <div class="form-group form-check mb-1">
-                                                <input type="checkbox" class="form-check-input" id="checkPrice3">
-                                                <label class="form-check-label" for="checkPrice3">$500 - $700</label>
-                                        </div>
-                                        <div class="form-group form-check mb-1">
-                                                <input type="checkbox" class="form-check-input" id="checkPrice4">
-                                                <label class="form-check-label" for="checkPrice4">$700 - $800</label>
-                                        </div>
-                                        <div class="form-group form-check mb-1">
-                                                <input type="checkbox" class="form-check-input" id="checkPrice5">
-                                                <label class="form-check-label" for="checkPrice5">over $800
-                                </div>
-                            </div>
+            </div>
+            <!-- Add to Cart site  -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-8 mb-3">
+                <p class="sr-only">Product</p>
+                <h5>Canon EOS 2018 New Edition</h5>
+                <h6 class="">
+                    <s>$500</s> <span class="text-danger">$450</span>
+                </h6>
+                <div class="d-flex flex-row mb-3">
+                    <h6 class="text-success mr-3">
+                        <i class="fas fa-check"></i> In stock 
+                    </h6>
+                    <h6 class="text-danger">
+                        <i class="fas fa-exclamation"></i> Out of stock <a href="#" class="myText-link">(Order)</a>
+                    </h6>
+                </div>
+                
+                <div class="d-flex flex-column">
+                    <span>Warranty:
+                        <span>12 months</span>
+                    </span>
+                    <span>Return:
+                        <span>15 days</span>
+                    </span>
+                    <span>Specification:
+                        <a class="myText-link" href="#tabSpecification"> View</a>
+                    </span>
+                    <span>Bonus gift:</span>
+                    <ul class="mt-1">
+                        <li>Handbag</li>
+                        <li>Free batterry change</li>
+                        <li>SD Memory Card</li>
+                    </ul>
+
+                </div>
+                <div class="row">
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-3 col-xl-3 pr-0">
+                        <label for="productQuantity" class="">Quantity</label>
+                        <input type="number" id="productQuantity" class="form-control " name="" value="1">
                     </div>
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-3 col-xl-3 pr-0">
+                        <label for="productColor" class="">Color</label>
+                        <select class="form-control myInput-elegant-2" id="productColor">
+                            <option>White</option>
+                            <option>Gray</option>
+                            <option>Black</option>
+                            <option>Gold</option>
+                            <option>Rose</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="btn myBtn-fill mt-3" title="Add to Cart" data-toggle="tooltip">
+                    <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                <!-- <div class="w-25">
+                    
+                </div> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-9">
+                <!-- Tab Here -->
+                <nav>
+                    <div class="nav nav-tabs myTab-nav" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link" id="tabDescriptionLabel" data-toggle="tab" href="#tabDescription" role="tab" aria-controls="tabDescription"
+                            aria-selected="true">Description</a>
+                        <a class="nav-item nav-link" id="tabSpecificationLabel" data-toggle="tab" href="#tabSpecification" role="tab" aria-controls="tabSpecification"
+                            aria-selected="false">Specification</a>
+                        <a class="nav-item nav-link active" id="tabReviewLabel" data-toggle="tab" href="#tabReview" role="tab" aria-controls="tabReview"
+                            aria-selected="false">Reviews</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="tabAccount">
+                    <div class="tab-pane myPost fade py-2" id="tabDescription" role="tabpanel" aria-labelledby="tabDescriptionLabel">
+                        <h4 class="my-4">CANON EOS 2018 NEW EDITION</h4>
+                        <p class="myText-subtitle">Canon has done a brilliant job to revamp its DSLR line from top to bottom over the past couple of years, from the baby EOS Rebel T7/2000D and EOS 4000D through to the full-frame EOS 6D Mark II and EOS 5D Mark IV models.</p>
+                        <h5>New Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut soluta nisi necessitatibus impedit, ab earum, eum voluptatem vel, sunt error perspiciatis? Officia harum et vero minus ratione odio nostrum magni?</p>
+                        <div class="myFigure mx-auto mb-2 bg-primary">
+                            <div class="myFigure-img"><img src="../img/item/item-camera-1.jpg" alt="" class=""></div>
+                            <div class="myFigure-caption">Canon EOS 2018</div>
+                        </div>
+                        <h5>New Features</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vel eos laboriosam eligendi illo totam ipsam ratione, facilis repellendus molestiae nesciunt, aliquid nisi placeat quisquam, a sed nam est saepe?</p>
+                    </div>
+                    <div class="tab-pane fade py-2" id="tabSpecification" role="tabpanel" aria-labelledby="tabSpecificationLabel">
+                        <h4 class="my-4">SPECIFICATION</h4>
+                        <table class="table table-striped">
+                            <tbody>
+                              <tr>
+                                <th scope="row">Product name</th>
+                                <td>CANON EOS 2018 New Edition</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Brand</th>
+                                <td>Canon</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">New</th>
+                                <td>New 100%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Screen</th>
+                                <td>4 inch</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Battery</th>
+                                <td>05 hours</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Box included</th>
+                                <td>Camera, len, cable, adaptor, SD Card, Guide</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade py-2 show active" id="tabReview" role="tabpanel" aria-labelledby="tabReviewLabel">
+                        <h4 class="my-4">REVIEWS</h4>
+                        <div class="form-group">
+                            <label for="formReviewMessage" class="">Comments:</label>
+                            <textarea class="form-control myInput-elegant-3" id="formReviewMessage" placeholder="Write your comments here" name="" cols="30" rows="3"></textarea>
+                            <button type="submit" class="btn myBtn-fill mt-3 mb-3">Send</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-3 myReview-level-1">
+                                <div class="d-flex flex-row align-items-center mb-2">
+                                    <div class="myReview-user-img mr-3">
+                                        <img src="../img/thumbnail/ava-user.jpg" alt="User" class="w-100 rounded-circle">
+                                    </div>
+                                    <div class="div">
+                                            <h6 class="mb-0">John Doe</h6>
+                                            <small class="text-muted">03 hours ago</small>
+                                    </div>
+                                </div>
+                                <div class="myReview-user-comment">
+                                    <p class="">Very good!</p>
+                                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores voluptatem officia eligendi quisquam aperiam blanditiis neque at ratione placeat, aliquid laudantium dolorum accusantium quae nostrum ab molestiae, assumenda quam!</p>
+                                    <a href="#">Reply</a>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 mb-3 myReview-level-2">
+                                <div class="d-flex flex-row align-items-center mb-2">
+                                    <div class="myReview-user-img mr-3">
+                                        <img src="../img/thumbnail/ava-user.jpg" alt="User" class="w-100 rounded-circle">
+                                    </div>
+                                    <div class="div">
+                                            <h6 class="mb-0">Bao Doan<span class="badge badge-secondary ml-2">Admin</span></h6>
+                                            <small class="text-muted">01 hours ago</small>
+                                    </div>
+                                </div>
+                                <div class="myReview-user-comment">
+                                    <p class="">Thank you!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores voluptatem.</p>
+                                    <a href="#">Reply</a>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Cards of Products  -->
-            <div class="col-12 col-sm-8 col-md-9 mb-3 bg-light d-flex flex-column justify-content-between">
-                <div class="row myCardBoard mt-3">
-                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
-                        <div class="myCard-product">
-                            <div class="myCard-upper">
-                                <div class="myCard-upper-img">
-                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
-                                </div>
-                                <div class="myCard-upper-overlay">
-                                    <span class="myCard-promote btn-danger">New</span>
-                                    <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
-                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
-                                            <span class="myCard-outofstock-text">Out of stock</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
-                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
-                            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <h6 class="mt-3 mb-4">Related Products</h6>
+                <div class="d-flex flex-column">
+                    <div class="row mb-3">
+                        <div class="col-4 pr-0">
+                            <a href="product-detail.html" target="_blank">
+                                <img class="w-100" src="../img/item/item-camera-2.jpg" alt="(Image)">
+                            </a>
+                        </div>
+                        <div class="col-8 d-flex flex-column">
+                            <h6 class="mb-1 text-truncate" title="Nikon 2018 New Edition Summer"><a href="product-detail.html" class="myText-link" target="_blank">Nikon 2018 New Edition Summer</a></h6>
+                            <span>$500</span>
+                            <small><a href="product-detail.html" class="myText-link" target="_blank">See more</a></small>
                         </div>
                     </div>
-                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
-                        <div class="myCard-product">
-                            <div class="myCard-upper myCard-outofstock">
-                                <div class="myCard-upper-img">
-                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
-                                </div>
-                                <div class="myCard-upper-overlay">
-                                    <span class="myCard-promote btn-danger">New</span>
-                                    <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
-                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
-                                            <span class="myCard-outofstock-text">Out of stock</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
-                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
-                            </div>
+                    <div class="row mb-3">
+                        <div class="col-4 pr-0">
+                            <a href="product-detail.html" target="_blank">
+                                <img class="w-100" src="../img/item/item-camera-2.jpg" alt="(Image)">
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
-                        <div class="myCard-product">
-                            <div class="myCard-upper">
-                                <div class="myCard-upper-img">
-                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
-                                </div>
-                                <div class="myCard-upper-overlay">
-                                    <span class="myCard-promote btn-danger">New</span>
-                                    <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
-                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
-                                            <span class="myCard-outofstock-text">Out of stock</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
-                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
-                            </div>
+                        <div class="col-8 d-flex flex-column">
+                            <h6 class="mb-1 text-truncate" title="Nikon 2018 New Edition Summer"><a href="product-detail.html" class="myText-link" target="_blank">Nikon 2018 New Edition Summer</a></h6>
+                            <span>$500</span>
+                            <small><a href="product-detail.html" class="myText-link" target="_blank">See more</a></small>
                         </div>
-                    </div>
-                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
-                        <div class="myCard-product">
-                            <div class="myCard-upper myCard-outofstock">
-                                <div class="myCard-upper-img">
-                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
-                                </div>
-                                <div class="myCard-upper-overlay">
-                                    <span class="myCard-promote btn-danger">New</span>
-                                    <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
-                                            <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
-                                            <span class="myCard-outofstock-text">Out of stock</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <h6 class="text-center text-small"><a href="product-detail.html" class="myText-link">Canon EOS</a></h6>
-                                <h6 class="text-center"><s class="text-danger">$500</s> $450</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-self-center mt-3">
-                    <div class="col-12">
-                            <nav aria-label="...">
-                                    <ul class="pagination">
-                                      <li class="page-item">
-                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                      </li>
-                                      <li class="page-item active"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
-                                      <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                      </li>
-                                    </ul>
-                                  </nav>
                     </div>
                 </div>
             </div>
@@ -564,6 +571,7 @@
     <!-- Script -->
     <script src="../vendor/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/ekko-lightbox/ekko-lightbox.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <script src="../script/script.js"></script>
 </body>

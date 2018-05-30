@@ -50,8 +50,8 @@
     --myOrange: #E6461A; 
 
     /* --------- Black | D ---------- */
-    --myColorD1: ;
-    --myColorD2: ;
+    --myColorD1: rgba(0,0,0,0.75);
+    --myColorD2: rgba(0,0,0,0.5);
     --myColorD3: ;
     /* --------- White | L ---------- */
     --myColorL1: ;
