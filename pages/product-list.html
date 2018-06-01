@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../vendor/font-awesome-5/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="../vendor/hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" href="../vendor/ekko-lightbox/ekko-lightbox.css">
     <link rel="stylesheet" href="../css/ultil.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -114,7 +115,7 @@
                     <a class="nav-link" href="signup.html">Sign up</a>
                 </li>
                 <li class="nav-item mx-auto">
-                    <a class="nav-link" href="#">Log out</a>
+                        <a class="nav-link" href="" data-toggle="modal" data-target="#formLogout">Log out</a>
                 </li>
             </ul>
         </div>
@@ -231,7 +232,8 @@
                                         <a href="#" class="btn myOutline text-dark w-100 d-flex flex-row justify-content-between align-items-center px-0" data-toggle="collapse" data-target="#collapseCategories" aria-controls="collapseCategories"
                                         aria-expanded="false">
                                         <span class="myText-padding-left"><b>Categories</b></span>
-                                        <i class="fas fa-angle-down"></i></a>
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
                                 </div>
                                 <div class="col-12 px-0">
                                     <div class="collapse show myCollapse-filter myText-margin-left myBorder-bottom" id="collapseCategories">
@@ -342,7 +344,10 @@
             </div>
             <!-- Cards of Products  -->
             <div class="col-12 col-sm-8 col-md-9 mb-3 bg-light d-flex flex-column justify-content-between">
-                <div class="row myCardBoard mt-3">
+                <div class="row myCardBoard mt-2 mb-2">
+                    <div class="col-12 mb-2">
+                        <h5>All Products</h5>
+                    </div>
                     <div class="col-5 col-sm-6 col-md-4 col-lg-3">
                         <div class="myCard-product">
                             <div class="myCard-upper">
@@ -352,7 +357,9 @@
                                 <div class="myCard-upper-overlay">
                                     <span class="myCard-promote btn-danger">New</span>
                                     <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                            <a href="../img/item/item-camera-1.jpg" data-toggle="lightbox" title="View larger image" class="myCard-btn btn-danger">
+                                                <i class="far fa-image"></i>
+                                            </a>
                                             <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
                                             <span class="myCard-outofstock-text">Out of stock</span>
                                     </div>
@@ -373,7 +380,9 @@
                                 <div class="myCard-upper-overlay">
                                     <span class="myCard-promote btn-danger">New</span>
                                     <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                        <a href="../img/item/item-camera-1.jpg" data-toggle="lightbox" title="View larger image" class="myCard-btn btn-danger">
+                                            <i class="far fa-image"></i>
+                                        </a>
                                             <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
                                             <span class="myCard-outofstock-text">Out of stock</span>
                                     </div>
@@ -389,12 +398,14 @@
                         <div class="myCard-product">
                             <div class="myCard-upper">
                                 <div class="myCard-upper-img">
-                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
+                                    <img class="card-img rounded-0" src="../img/item/item-camera-2.jpg" alt="product">
                                 </div>
                                 <div class="myCard-upper-overlay">
                                     <span class="myCard-promote btn-danger">New</span>
                                     <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                        <a href="../img/item/item-camera-2.jpg" data-toggle="lightbox" title="View larger image" class="myCard-btn btn-danger">
+                                            <i class="far fa-image"></i>
+                                        </a>
                                             <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
                                             <span class="myCard-outofstock-text">Out of stock</span>
                                     </div>
@@ -410,12 +421,14 @@
                         <div class="myCard-product">
                             <div class="myCard-upper myCard-outofstock">
                                 <div class="myCard-upper-img">
-                                    <img class="card-img rounded-0" src="../img/item/item-camera-1.jpg" alt="product">
+                                    <img class="card-img rounded-0" src="../img/item/item-camera-2.jpg" alt="product">
                                 </div>
                                 <div class="myCard-upper-overlay">
                                     <span class="myCard-promote btn-danger">New</span>
                                     <div class="d-flex justify-content-around">
-                                            <a href="" class="myCard-btn btn-danger" title="View larger image" data-toggle="tooltip"><i class="far fa-image"></i></a>
+                                        <a href="../img/item/item-camera-1.jpg" data-toggle="lightbox" title="View larger image" class="myCard-btn btn-danger">
+                                            <i class="far fa-image"></i>
+                                        </a>
                                             <a href="#" class="myCard-btn btn-danger" title="Add to Cart" data-toggle="tooltip"><i class="fas fa-cart-plus"></i></a>
                                             <span class="myCard-outofstock-text">Out of stock</span>
                                     </div>
@@ -433,7 +446,9 @@
                             <nav aria-label="...">
                                     <ul class="pagination">
                                       <li class="page-item">
-                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        <a class="page-link" href="#" tabindex="-1">
+                                            <i class="fas fa-angle-double-left"></i>
+                                        </a>
                                       </li>
                                       <li class="page-item active"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
                                       <li class="page-item">
@@ -441,10 +456,12 @@
                                       </li>
                                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                                       <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
+                                        <a class="page-link" href="#">
+                                            <i class="fas fa-angle-double-right"></i>
+                                        </a>
                                       </li>
                                     </ul>
-                                  </nav>
+                            </nav>
                     </div>
                 </div>
             </div>
@@ -488,6 +505,28 @@
             </div>
         </div>
     </div>
+    <!-- Modal: LOGOUT -->
+    <div class="modal fade" id="formLogout" tabindex="-1" role="dialog" aria-labelledby="formLogoutLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formLogoutLabel">Logout</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="text-center">
+                            <p>Are you sure to logout?</p>
+                            <div>
+                                <button class="btn myBtn-outline mr-2">No</button>
+                                <button type="submit" class="btn myBtn-fill">Yes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Modal: SUBSCRIBE -->
     <div class="modal fade" id="formSubscribe" tabindex="-1" role="dialog" aria-labelledby="formSubscribeLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -564,6 +603,7 @@
     <!-- Script -->
     <script src="../vendor/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/ekko-lightbox/ekko-lightbox.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <script src="../script/script.js"></script>
 </body>

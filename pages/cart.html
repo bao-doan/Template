@@ -114,7 +114,7 @@
                     <a class="nav-link" href="signup.html">Sign up</a>
                 </li>
                 <li class="nav-item mx-auto">
-                    <a class="nav-link" href="#">Log out</a>
+                    <a class="nav-link" href="" data-toggle="modal" data-target="#formLogout">Log out</a>
                 </li>
             </ul>
         </div>
@@ -209,107 +209,242 @@
             </div>
         </div>
     </div>
-    <div class="myBody-buffer"></div>
-     <!-- Modal: LOGIN -->
-     <div class="modal fade" id="formLogin" tabindex="-1" role="dialog" aria-labelledby="formLoginLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="formLoginLabel">Login</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group mt-2">
-                                <label for="formLoginEmail" class="sr-only">Email address:</label>
-                                <input type="email" class="form-control myInput-elegant-3" id="formLoginEmail" aria-describedby="emailHelp" placeholder="Email address">
-                            </div>
-                            <div class="form-group">
-                                <label for="formLoginPassword" class="sr-only">Password:</label>
-                                <input type="password" class="form-control myInput-elegant-3 mb-2" id="formLoginPassword" placeholder="Password">
-                                <a href="forgot.html" class="text-muted" target="_blank"><small>I forgot my password.</small></a>
-                            </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="formLoginRemember">
-                                <label class="form-check-label text-muted" for="formLoginRemember">Remember login</label>
-                            </div>
-                            <div class="d-flex flex-column align-items-center mt-4">
-                                <button type="submit" class="btn myBtn-fill">Log in</button>
-                                <a href="signup.html" class="text-muted mt-2 mb-2" target="_blank"><small>I don't have an account.</small></a>
-                            </div>
-                        </form>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 d-flex flex-column mb-3">
+                <h5 class="bg-secondary text-white py-2 pl-2 mb-4">Shopping Products</h5>
+                <div class="table-responsive mb-2">
+                    <table class="table border">
+                        <thead>
+                            <tr class=" ">
+                                <th scope="col"> </th>
+                                <th class="myTable-product" scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Color</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="myTable-row">
+                                <td>
+                                    <div class="myImg-thumbnail">
+                                        <img src="../img/item/item-camera-1.jpg" class="w-100" alt="">
+                                    </div>
+                                </td>
+                                <th class="myTable-product" scope="row">
+                                    <h6 class="mb-1"><a href="product-detail.html" class="myText-link">Canon EOS 2018 New Edition Limited 100% New US Imported</a></h6>
+                                    <a href="#" class="text-small text-muted"><small><i class="far fa-trash-alt"></i> Remove</small></a>
+                                </th>
+                                <td>$450</td>
+                                <td>Black</td>
+                                <td>
+                                    <label for="formCartQuantity" class="sr-only"></label>
+                                    <input type="number" class="form-control myInput-cart-quantity" id="formCartQuantity" aria-describedby="" value="1" name="">
+                                </td>
+                                <td><b>$450</b></td>
+                            </tr>
+                            <tr class="myTable-row">
+                                <td>
+                                    <div class="myImg-thumbnail">
+                                        <img src="../img/item/item-camera-1.jpg" class="w-100" alt="">
+                                    </div>
+                                </td>
+                                <th class="myTable-product" scope="row">
+                                    <h6 class="mb-1"><a href="product-detail.html" class="myText-link">Canon EOS 2018</a></h6>
+                                    <a href="#" class="text-small text-muted"><small><i class="far fa-trash-alt"></i> Remove</small></a>
+                                </th>
+                                <td>$450</td>
+                                <td>Black</td>
+                                <td>
+                                    <label for="formCartQuantity" class="sr-only"></label>
+                                    <input type="number" class="form-control myInput-cart-quantity" id="formCartQuantity" aria-describedby="" value="1" name="">
+                                </td>
+                                <td><b>$450</b></td>
+                            </tr>
+                            <tr class="myTable-row">
+                                <td>
+                                    <div class="myImg-thumbnail">
+                                        <img src="../img/item/item-camera-1.jpg" class="w-100" alt="">
+                                    </div>
+                                </td>
+                                <th class="myTable-product" scope="row">
+                                    <h6 class="mb-1"><a href="product-detail.html" class="myText-link">Canon EOS 2018</a></h6>
+                                    <a href="#" class="text-small text-muted"><small><i class="far fa-trash-alt"></i> Remove</small></a>
+                                </th>
+                                <td>$450</td>
+                                <td>Black</td>
+                                <td>
+                                    <label for="formCartQuantity" class="sr-only"></label>
+                                    <input type="number" class="form-control myInput-cart-quantity" id="formCartQuantity" aria-describedby="" value="1" name="">
+                                </td>
+                                <td><b>$450</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+                <div class="form-group w-50 align-self-end">
+                    <label for="formCartDiscount"><b>Apply Discount:</b></label>
+                    <input type="text" class="form-control text-uppercase" id="formCartDiscount" aria-describedby="" placeholder="">
+                  </div>
+                <button type="submit" class="btn myBtn-fill align-self-end">Update Cart</button>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <h5 class="bg-secondary text-white py-2 pl-2 mb-4">Cart Totals</h5>
+                <table class="table">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Products</th>
+                          <td class="text-right">$1350</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discount</th>
+                          <td class="text-right">-$0</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOTAL</th>
+                          <td class="text-right"><b>$1370</b></td>
+                        </tr>
+                      </tbody>
+                </table>
+                <a href="checkout.html" class="btn myBtn-fill align-self-end" target="_blank">Checkout</a>
             </div>
         </div>
-        <!-- Modal: SUBSCRIBE -->
-        <div class="modal fade" id="formSubscribe" tabindex="-1" role="dialog" aria-labelledby="formSubscribeLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Subscribe to our <b>Newsletters</b></h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                            </button>
+    </div>
+    <!-- Modal: LOGIN -->
+    <div class="modal fade" id="formLogin" tabindex="-1" role="dialog" aria-labelledby="formLoginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formLoginLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group mt-2">
+                            <label for="formLoginEmail" class="sr-only">Email address:</label>
+                            <input type="email" class="form-control myInput-elegant-3" id="formLoginEmail" aria-describedby="emailHelp" placeholder="Email address">
                         </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                    <span><i>Let's stay in touch to get notified about our <a href="product-list.html" class="myText-link" target="_blank">newest Products &amp; Promotions.</a></i></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="formSubscribeName" class="sr-only">Your name:</label>
-                                <input type="text" class="form-control myInput-elegant-3" id="formSubscribeName" aria-describedby="" placeholder="Your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="formSubscribeEmail" class="sr-only">Email:</label>
-                                <input type="email" class="form-control myInput-elegant-3" id="formSubscribeEmail" placeholder="Your email address" aria-describedby="formSubscribeEmailHelp">
-                                <small id="formSubscribeEmailHelp" class="form-text text-muted mt-2">(We'll never share your email with anyone else.)</small>
-                            </div>
-                            <div class="d-flex flex-column align-items-center mt-4">
-                                <button type="submit" class="btn myBtn-fill">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="form-group">
+                            <label for="formLoginPassword" class="sr-only">Password:</label>
+                            <input type="password" class="form-control myInput-elegant-3 mb-2" id="formLoginPassword" placeholder="Password">
+                            <a href="forgot.html" class="text-muted" target="_blank">
+                                <small>I forgot my password.</small>
+                            </a>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="formLoginRemember">
+                            <label class="form-check-label text-muted" for="formLoginRemember">Remember login</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <button type="submit" class="btn myBtn-fill">Log in</button>
+                            <a href="signup.html" class="text-muted mt-2 mb-2" target="_blank">
+                                <small>I don't have an account.</small>
+                            </a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="container-fluid py-3">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <a href="../index.html" class="myBrand-logo" target="_blank">Brand</a>
+    </div>
+    <!-- Modal: LOGOUT -->
+    <div class="modal fade" id="formLogout" tabindex="-1" role="dialog" aria-labelledby="formLogoutLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formLogoutLabel">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="row justify-content-center myFooter-social">
-                    <a href="https://www.facebook.com" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.pinterest.com" target="_blank">
-                        <i class="fab fa-pinterest"></i>
-                    </a>
-                    <a href="#" data-toggle="modal" data-target="#formSubscribe" target="_blank" title="Subscribe to our Newsletters" data-toggle="tooltip" data-placement="bottom">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                </div>
-                <div class="row justify-content-center myFooter-policy mb-2">
-                    <a href="#" target="_blank" class="text-dark">Terms of service</a>
-                    <span> | </span>
-                    <a href="#" target="_blank" class="text-dark">Privacy policy</a>
-                </div>
-                <div class="row justify-content-center myFooter-brand">
-                    <a href="../index.html" class="m-0" target="_blank">&copy; Brand 2018</a>
+                <div class="modal-body">
+                    <form action="" class="text-center">
+                        <p>Are you sure to logout?</p>
+                        <div>
+                            <button class="btn myBtn-outline mr-2">No</button>
+                            <button type="submit" class="btn myBtn-fill">Yes</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
-        <!-- Jumptop button -->
-        <div id="myJumptop" class="btn myBtn-jumptop" title="Jump to Top Screen" data-toggle="tooltip" data-placement="top">
-            <i class="fas fa-chevron-up"></i>
         </div>
+    </div>
+    <!-- Modal: SUBSCRIBE -->
+    <div class="modal fade" id="formSubscribe" tabindex="-1" role="dialog" aria-labelledby="formSubscribeLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Subscribe to our
+                        <b>Newsletters</b>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <span>
+                                <i>Let's stay in touch to get notified about our
+                                    <a href="product-list.html" class="myText-link"
+                                        target="_blank">newest Products &amp; Promotions.</a>
+                                </i>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubscribeName" class="sr-only">Your name:</label>
+                            <input type="text" class="form-control myInput-elegant-3" id="formSubscribeName" aria-describedby="" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubscribeEmail" class="sr-only">Email:</label>
+                            <input type="email" class="form-control myInput-elegant-3" id="formSubscribeEmail" placeholder="Your email address" aria-describedby="formSubscribeEmailHelp">
+                            <small id="formSubscribeEmailHelp" class="form-text text-muted mt-2">(We'll never share your email with anyone else.)</small>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <button type="submit" class="btn myBtn-fill">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <a href="../index.html" class="myBrand-logo" target="_blank">Brand</a>
+            </div>
+            <div class="row justify-content-center myFooter-social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#formSubscribe" target="_blank" title="Subscribe to our Newsletters" data-toggle="tooltip"
+                    data-placement="bottom">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+            <div class="row justify-content-center myFooter-policy mb-2">
+                <a href="#" target="_blank" class="text-dark">Terms of service</a>
+                <span> | </span>
+                <a href="#" target="_blank" class="text-dark">Privacy policy</a>
+            </div>
+            <div class="row justify-content-center myFooter-brand">
+                <a href="../index.html" class="m-0" target="_blank">&copy; Brand 2018</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Jumptop button -->
+    <div id="myJumptop" class="btn myBtn-jumptop" title="Jump to Top Screen" data-toggle="tooltip" data-placement="top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
     <!-- Script -->
     <script src="../vendor/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

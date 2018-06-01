@@ -115,7 +115,7 @@
                     <a class="nav-link" href="signup.html">Sign up</a>
                 </li>
                 <li class="nav-item mx-auto">
-                    <a class="nav-link" href="#">Log out</a>
+                        <a class="nav-link" href="" data-toggle="modal" data-target="#formLogout">Log out</a>
                 </li>
             </ul>
         </div>
@@ -383,9 +383,10 @@
                     <div class="tab-pane fade py-2 show active" id="tabReview" role="tabpanel" aria-labelledby="tabReviewLabel">
                         <h4 class="my-4">REVIEWS</h4>
                         <div class="form-group">
-                            <label for="formReviewMessage" class="">Comments:</label>
-                            <textarea class="form-control myInput-elegant-3" id="formReviewMessage" placeholder="Write your comments here" name="" cols="30" rows="3"></textarea>
-                            <button type="submit" class="btn myBtn-fill mt-3 mb-3">Send</button>
+                            <label for="formReviewMessage" class="">Comment:</label>
+                            <textarea class="form-control myInput-elegant-3" id="formReviewMessage" placeholder="Write your comment here" name="" cols="30" rows="3"></textarea>
+                            <!-- Doing -->
+                            <button type="submit" class="btn myBtn-fill mt-3 mb-3" data-toggle="modal" data-target="#formSenderInfo">Send</button>
                         </div>
                         <div class="row">
                             <div class="col-12 mb-3 myReview-level-1">
@@ -423,6 +424,30 @@
                                 
                             </div>
                         </div>
+                        <div class="row my-4">
+                            <div class="col-12 d-flex justify-content-center">
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="-1">
+                                            <i class="fas fa-angle-double-left"></i>
+                                        </a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="fas fa-angle-double-right"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -453,6 +478,39 @@
                             <small><a href="product-detail.html" class="myText-link" target="_blank">See more</a></small>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal: SEND REVIEW | Sender Info -->
+    <div class="modal fade" id="formSenderInfo" tabindex="-1" role="dialog" aria-labelledby="formSenderInfoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank you for your comment!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <span class="text-justify text-muted">Just a quick step, please let us know some information to notify you.
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSenderName" class="sr-only">Your name:</label>
+                            <input type="text" class="form-control myInput-elegant-3" id="formSenderName" aria-describedby="" placeholder="Your name (required)">
+                        </div>
+                        <div class="form-group">
+                            <label for="formSenderEmail" class="sr-only">Email:</label>
+                            <input type="email" class="form-control myInput-elegant-3" id="formSenderEmail" placeholder="Email address (required)" aria-describedby="formSenderEmailHelp">
+                            <small id="formSenderEmailHelp" class="form-text text-muted mt-2">(In order to get notification about our Responses)</small>
+                        </div>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <button type="submit" class="btn myBtn-fill">Finish</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -495,6 +553,28 @@
             </div>
         </div>
     </div>
+    <!-- Modal: LOGOUT -->
+    <div class="modal fade" id="formLogout" tabindex="-1" role="dialog" aria-labelledby="formLogoutLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formLogoutLabel">Logout</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="text-center">
+                            <p>Are you sure to logout?</p>
+                            <div>
+                                <button class="btn myBtn-outline mr-2">No</button>
+                                <button type="submit" class="btn myBtn-fill">Yes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Modal: SUBSCRIBE -->
     <div class="modal fade" id="formSubscribe" tabindex="-1" role="dialog" aria-labelledby="formSubscribeLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
