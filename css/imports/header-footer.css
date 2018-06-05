@@ -1,6 +1,9 @@
 /* Header | Footer | Body Buffer */
 body {
-    /* font-family: 'San Francisco', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Abel', sans-serif; */
+    /* font-family: 'Cantarell', sans-serif; */
+    /* font-family: 'Cabin', sans-serif; */
 }
 @media (max-width: 576px) {
     .myCollapse-sm-center {
@@ -419,4 +422,12 @@ body {
     /* overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; */
+}
+.myDropdown-side {
+    position: relative;
+}
+.myDropdown-side-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
 }
