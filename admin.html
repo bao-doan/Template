@@ -20,9 +20,9 @@
     <!-- Creator's -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome-5/web-fonts-with-css/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="vendor/hamburgers/dist/hamburgers.min.css">
-    <link href="vendor/pace-progress/css/pace.min.css" rel="stylesheet">
-    <link href="css/admin.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="vendor/hamburgers/dist/hamburgers.min.css"> -->
+    <!-- <link rel="stylesheet" href="vendor/pace-progress/css/pace.min.css"> -->
+    <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/ultil.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- Icons-->
@@ -63,17 +63,17 @@
         <div class="sidebar">
             <nav class="sidebar-nav">
                 <ul class="nav">
-                   
+
                     <li class="nav-title">ADMIN</li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="admin.html">
-                           <i class="fas fa-tachometer-alt nav-icon"></i> Dashboard
+                            <i class="fas fa-tachometer-alt nav-icon"></i> Dashboard
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                           <i class="far fa-user nav-icon"></i> Profile
+                            <i class="far fa-user nav-icon"></i> Profile
                         </a>
                     </li>
                     <li class="nav-item nav-dropdown">
@@ -93,44 +93,44 @@
                     <li class="nav-title">CREATE NEW</li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                           <i class="fab fa-product-hunt nav-icon"></i> Products
+                            <i class="fab fa-product-hunt nav-icon"></i> Products
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                           <i class="far fa-file-alt nav-icon"></i> Posts
+                            <i class="far fa-file-alt nav-icon"></i> Posts
                         </a>
                     </li>
                     <li class="nav-title">STORE</li>
                     <li class="nav-item nav-dropdown">
-                            <a class="nav-link nav-dropdown-toggle" href="#">
-                                <i class="far fa-file nav-icon"></i> Pages</a>
-                            <ul class="nav-dropdown-items">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="nav-icon"></i> One</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="nav-icon"></i> Two</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="far fa-file nav-icon"></i> Pages</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="nav-icon"></i> One</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="nav-icon"></i> Two</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-item nav-dropdown">
-                            <a class="nav-link nav-dropdown-toggle" href="#">
-                                <i class="fas fa-list-ul nav-icon"></i> Categories</a>
-                            <ul class="nav-dropdown-items">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="nav-icon"></i> One</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="nav-icon"></i> Two</a>
-                                </li>
-                            </ul>
-                        </li>
-                   
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="fas fa-list-ul nav-icon"></i> Categories</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="nav-icon"></i> One</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="nav-icon"></i> Two</a>
+                            </li>
+                        </ul>
+                    </li>
+
                 </ul>
             </nav>
             <button class="sidebar-minimizer brand-minimizer " type="button"></button>
@@ -152,31 +152,34 @@
                             <label for="formAddCategory">Create new Category</label>
                             <input type="text" id="formAddCategory" name="formAddCategory" class="form-control myInput-elegant-2" placeholder="">
                         </div>
-                        <button class="btn btn-success"><i class="fas fa-plus"></i> Create</button>
+                        <button class="btn btn-success">
+                            <i class="fas fa-plus"></i> Create</button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                         <div class="d-flex flex-row justify-content-between align-items-center mb-3">
-                                <span class="h5 mb-0">Master List</span>
-                                <button class="btn btn-primary"><i class="fas fa-sync-alt"></i> Refresh</button>
+                            <span class="h5 mb-0">Master List</span>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-sync-alt"></i> Refresh</button>
                         </div>
-                        
+
                         <ul class="list-group border-0">
-                            <li class="">{{waiting for binding}}</li>
+                            <li class="">waiting for binding</li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
-                            <div class="d-flex flex-row justify-content-between align-items-center mb-3">
-                                    <span class="h5 mb-0">Details</span>
-                                    <button class="btn btn-primary"><i class="fas fa-check"></i> Update</button>
-                            </div>
-                            <div class="form-group">
-                                <label for="formAddCategory">Category:</label>
-                                <input type="text" id="formAddCategory" name="formAddCategory" class="form-control myInput-elegant-2" placeholder="">
-                                
-                            </div>
-                            <p>Id: 123456</p>
-                            <p>Title: Lorem ipsum ador</p>
-                            <p>Created date: 01/01/2010</p>
+                        <div class="d-flex flex-row justify-content-between align-items-center mb-3">
+                            <span class="h5 mb-0">Details</span>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-check"></i> Update</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="formAddCategory">Category:</label>
+                            <input type="text" id="formAddCategory" name="formAddCategory" class="form-control myInput-elegant-2" placeholder="">
+
+                        </div>
+                        <p>Id: 123456</p>
+                        <p>Title: Lorem ipsum ador</p>
+                        <p>Created date: 01/01/2010</p>
                     </div>
                 </div>
             </div>
@@ -193,20 +196,20 @@
         </div>
     </footer>
     <!-- Bootstrap and necessary plugins-->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/pace-progress/pace.min.js"></script>
-    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <!-- <script src="node_modules/pace-progress/pace.min.js"></script> -->
+    <!-- <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script> -->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
     <!-- Ultimate script -->
     <script src="vendor/jquery/dist/jquery.min.js"></script>
     <script src="vendor/popper.js/dist/umd/popper.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/pace-progress/pace.min.js"></script>
     <script src="vendor/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-    <script src="vendor/coreui/dist/js/coreui.min.js"></script>
+    <!-- <script src="vendor/coreui/dist/js/coreui.min.js"></script> -->
     <script src="script/script.js"></script>
 </body>
 
